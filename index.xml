@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Zhy-Liu 的博客</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on Zhy-Liu 的博客</description>
+    <title>Home on Zhy-Liu的博客</title>
+    <link>https://example.org/</link>
+    <description>Recent content in Home on Zhy-Liu的博客</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>写给理工科人的古典音乐聆听指南</title>
+      <link>https://example.org/post/classical-music-listening-for-tech/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/classical-music-listening-for-tech/</guid>
+      <description>旋律, 和声, 音色, 节奏</description>
+    </item>
     <item>
       <title>如何了解一个人</title>
-      <link>http://localhost:1313/post/test/</link>
+      <link>https://example.org/post/how-to-know-a-person/</link>
       <pubDate>Fri, 07 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/test/</guid>
+      <guid>https://example.org/post/how-to-know-a-person/</guid>
       <description>如何了解一个人</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/post/read-novel-read-what/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/post/read-novel-read-what/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
