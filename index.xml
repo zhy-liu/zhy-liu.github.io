@@ -6,8 +6,15 @@
     <description>Recent content in Home on Zhy-Liu Blogs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://zhy-liu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diffusion中的噪声调度</title>
+      <link>https://zhy-liu.github.io/post/noise-scheduling-diffusion/</link>
+      <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://zhy-liu.github.io/post/noise-scheduling-diffusion/</guid>
+      <description>Noise Scheduling</description>
+    </item>
     <item>
       <title>2026年OKR</title>
       <link>https://zhy-liu.github.io/post/okr-2026/</link>
@@ -21,13 +28,6 @@
       <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://zhy-liu.github.io/post/the-people-zhang-zi-ming/</guid>
       <description>至城下，大呼：“我张大舍。已见主上，令诸公坚守，救且至。”</description>
-    </item>
-    <item>
-      <title>一个Windows阵营叛徒的忏悔</title>
-      <link>https://zhy-liu.github.io/post/a-traitor-from-windows-to-mac/</link>
-      <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://zhy-liu.github.io/post/a-traitor-from-windows-to-mac/</guid>
-      <description>我真的很喜欢苹果的产品，但也真的离不开Windows。</description>
     </item>
     <item>
       <title>一种结构主义古典音乐聆听指南</title>
