@@ -6,15 +6,8 @@
     <description>Recent content in Posts on Zhy-Liu Blogs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://zhy-liu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Diffusion中的噪声调度</title>
-      <link>https://zhy-liu.github.io/post/noise-scheduling-diffusion/</link>
-      <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://zhy-liu.github.io/post/noise-scheduling-diffusion/</guid>
-      <description>Noise Scheduling</description>
-    </item>
     <item>
       <title>2026年OKR</title>
       <link>https://zhy-liu.github.io/post/okr-2026/</link>
