@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="https://zhy-liu.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://zhy-liu.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://zhy-liu.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://zhy-liu.github.io/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://zhy-liu.github.io/apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    Diffusion Model 的一般SDE框架 | Liu Zhy Blogs
+    
+</title>
+
+<link rel="canonical" href="https://zhy-liu.github.io/post/sde-diffusion/"/>
+
+<meta property="og:url" content="https://zhy-liu.github.io/post/sde-diffusion/">
+  <meta property="og:site_name" content="Liu Zhy Blogs">
+  <meta property="og:title" content="Diffusion Model 的一般SDE框架">
+  <meta property="og:description" content="SDE formulated Diffusion Model">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-12-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-24T00:00:00+00:00">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.56b1873d8852f8a5a109abda36c1bfcde55cb48e5bcbe0d8c934a196a7dc374a.css" media="all">
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-xxxxxxxxx');
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="https://zhy-liu.github.io/">Liu Zhy Blogs</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/post" >
+                /Blogs
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/about" >
+                /about
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+<div class="breadcrumbs"><a href="/">Home</a><span class="breadcrumbs-separator">/</span><a href="/post/">Posts</a><span class="breadcrumbs-separator">/</span>
+        <a href="/post/sde-diffusion/">Diffusion Model 的一般SDE框架</a></div>
+
+
+<div  class="autonumber" >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">Diffusion Model 的一般SDE框架</h1>
+        <p class="single-summary">SDE formulated Diffusion Model</p>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="author">Zhy-Liu </p>
+            
+            <p class="single-date">
+              <time datetime="2025-12-24T00:00:00&#43;00:00">December 24, 2025</time>
+              &nbsp; · &nbsp;1 min read
+            </p>
+          </div>
+        </div>
+        
+    </header>
+      <aside class="toc">
+        <p><strong>Table of contents</strong></p>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ddpm和denoising-score-matching的简要回顾">DDPM和Denoising Score Matching的简要回顾</a>
+      <ul>
+        <li><a href="#ddpmdiffusion-model的变分视角">DDPM：Diffusion Model的变分视角</a></li>
+        <li><a href="#denoising-score-matchingdiffusion-model的分数匹配视角">Denoising Score Matching：Diffusion Model的分数匹配视角</a></li>
+      </ul>
+    </li>
+    <li><a href="#diffusion-model之一般sde框架">Diffusion Model之一般SDE框架</a></li>
+    <li></li>
+  </ul>
+</nav>
+      </aside>
+    
+    <div class="single-content">
+      <p>本文将从DDPM和Score Matching两个最为经典的Diffusion Model形式出发，梳理出Diffusion Model的一般SDE形式。为此，读者需要掌握VAE的基础知识，并且熟悉VAE中最重要的重参数化（Reparameterization）技巧和KL散度。HVAE的知识不是必要的，但是最好有所了解。</p>
+<h2 class="heading" id="ddpm和denoising-score-matching的简要回顾">
+  DDPM和Denoising Score Matching的简要回顾
+  <a class="anchor" href="#ddpm%e5%92%8cdenoising-score-matching%e7%9a%84%e7%ae%80%e8%a6%81%e5%9b%9e%e9%a1%be">#</a>
+</h2>
+<h3 class="heading" id="ddpmdiffusion-model的变分视角">
+  DDPM：Diffusion Model的变分视角
+  <a class="anchor" href="#ddpmdiffusion-model%e7%9a%84%e5%8f%98%e5%88%86%e8%a7%86%e8%a7%92">#</a>
+</h3>
+<p>DDPM可以说是Diffusion Model的最原始的形式，全称是Denoising Diffusion Probabilistic Model。DDPM通过如下的操作完成生成的过程的建模。
+以图像为例，如图1所示，首先向一张图片$x_0$中不断可控的加入高斯噪声，直到这张图片完全变成一张高斯噪声图$x_L$。当我们想要生成一张图片的时候，就可以通过随机采样一张高斯噪声的图片，通过这个过程的逆过程，生成一张图片。</p>
+
+<div class="table-outer">
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align: center">
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    
+    
+      
+        <div class="img-container" style="--w: 1130; --h: 204;">
+            <img loading="lazy" alt="扩散模型示意图" src="/post/imgs/diffusion_sde/noise-add.png" width="1130" height="204">
+        </div>
+      
+    
+
+    
+</figure>
+</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center">
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    
+    
+      
+        <div class="img-container" style="--w: 1116; --h: 205;">
+            <img loading="lazy" alt="扩散模型示意图" src="/post/imgs/diffusion_sde/denoising-demo.png" width="1116" height="205">
+        </div>
+      
+    
+
+    
+</figure>
+</td>
+            </tr>
+            <tr>
+                <td style="text-align: center">图1：扩散模型的建模示意。图片来源：<em>Principles of Diffusion Model</em> by Lai and Song</td>
+            </tr>
+        </tbody>
+    </table>
+</div><p>这个过程虽然简单，但是却满足生成式模型建模最本质的特征之一——将随机性添加到建模过程中。这个思想如此简单，但实现起来却需要十分的精细。我们需要将“可控”用数学定义清楚，其次，我们需要找到一种技术手段，能够将这个过程逆转过来，才能完成生成。</p>
+<p>用于定义“可控”的数学工具是机器学习中普遍使用的概率论，将加噪过程你转过来的关键技术手段是神经网络技术。</p>
+<h4 class="heading" id="问题设置">
+  问题设置
+  <a class="anchor" href="#%e9%97%ae%e9%a2%98%e8%ae%be%e7%bd%ae">#</a>
+</h4>
+<p>设一个未知的数据分布为 $p_{data}(x)$，我们假设其服从均值为$\mu$, 方差为$\sigma^2$的高斯分布，即$p_{data}(x) \sim \mathcal{N}(x; \mu, \sigma^2)$<!-- raw HTML omitted -->1<!-- raw HTML omitted -->。</p>
+<p>DDPM的做法是通过将有限的高斯噪声加入到数据当中，生成一系列中间的条件分布，最终将数据分布转化为一个标准的高斯分布。其中加噪的过程可以用下面的公式表示：</p>
+<p>$$x_t = \alpha_t x_{t-1} + \beta_t \epsilon$$</p>
+<p>其中$\alpha$和$\beta$满足$\alpha ^ 2 + \beta ^ 2 = 1$，$\epsilon \sim \mathcal{N}(0, I)$，$\alpha$是一组事先定义好了的超参数。</p>
+<p>也可以写成</p>
+<p>$$x_t = \alpha_t x_{t-1} + \sqrt{1 - \alpha_t^2} \epsilon \tag{1}$$</p>
+<p>其中$\epsilon \sim \mathcal{N}(0, I)$。</p>
+<h4 class="heading" id="注解">
+  注解
+  <a class="anchor" href="#%e6%b3%a8%e8%a7%a3">#</a>
+</h4>
+<h3 class="heading" id="denoising-score-matchingdiffusion-model的分数匹配视角">
+  Denoising Score Matching：Diffusion Model的分数匹配视角
+  <a class="anchor" href="#denoising-score-matchingdiffusion-model%e7%9a%84%e5%88%86%e6%95%b0%e5%8c%b9%e9%85%8d%e8%a7%86%e8%a7%92">#</a>
+</h3>
+<h2 class="heading" id="diffusion-model之一般sde框架">
+  Diffusion Model之一般SDE框架
+  <a class="anchor" href="#diffusion-model%e4%b9%8b%e4%b8%80%e8%88%acsde%e6%a1%86%e6%9e%b6">#</a>
+</h2>
+<h2 class="heading" id="">
+  
+  <a class="anchor" href="#">#</a>
+</h2>
+<p>1: 由大数定律和中心极限定理，任何分布在样本量趋于无穷大的时候，样本均值都会趋于正态分布。因此，这里高斯分布的假设是合理的。</p>
+
+    </div>
+  </article>
+    <div class="single-comments">
+      <script src="https://giscus.app/client.js"
+        data-repo="zhy-liu/zhy-liu.github.io"
+        data-repo-id="R_kgDOQSCD8w"
+        data-category=""
+        data-category-id="DIC_kwDOQSCD884CxmAl"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    </div>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/post/okr-2026/">
+                        2026年OKR
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+    
+    <p>Powered by
+        <a href="https://gohugo.io/">Hugo</a>
+        and
+        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+    </p>
+    
+    
+    
+
+
+  </footer>
+
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>
