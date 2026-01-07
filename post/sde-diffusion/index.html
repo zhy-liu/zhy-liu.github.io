@@ -41,12 +41,12 @@
 <meta property="og:url" content="https://zhy-liu.github.io/post/sde-diffusion/">
   <meta property="og:site_name" content="Liu Zhy Blogs">
   <meta property="og:title" content="Diffusion Model 的一般SDE框架">
-  <meta property="og:description" content="SDE formulated Diffusion Model">
+  <meta property="og:description" content="精确地表示定律有且只有一种方式，那就是微分方程。——理查德·P·费曼">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2025-12-24T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-12-24T00:00:00+00:00">
+    <meta property="article:published_time" content="2026-01-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-07T00:00:00+00:00">
 
 
 
@@ -169,7 +169,7 @@
     <header class="single-intro-container">
         
         <h1 class="single-title">Diffusion Model 的一般SDE框架</h1>
-        <p class="single-summary">SDE formulated Diffusion Model</p>
+        <p class="single-summary">精确地表示定律有且只有一种方式，那就是微分方程。——理查德·P·费曼</p>
         
         <div class="single-subsummary">
           
@@ -178,7 +178,7 @@
             <p class="author">Zhy-Liu </p>
             
             <p class="single-date">
-              <time datetime="2025-12-24T00:00:00&#43;00:00">December 24, 2025</time>
+              <time datetime="2026-01-07T00:00:00&#43;00:00">January 7, 2026</time>
               &nbsp; · &nbsp;1 min read
             </p>
           </div>
@@ -191,7 +191,7 @@
   <ul>
     <li><a href="#ddpm和denoising-score-matching的简要回顾">DDPM和Denoising Score Matching的简要回顾</a>
       <ul>
-        <li><a href="#ddpmdiffusion-model的变分视角">DDPM：Diffusion Model的变分视角</a></li>
+        <li><a href="#ddpm变分视角下的-diffusion-model">DDPM：变分视角下的 Diffusion Model</a></li>
         <li><a href="#denoising-score-matchingdiffusion-model的分数匹配视角">Denoising Score Matching：Diffusion Model的分数匹配视角</a></li>
       </ul>
     </li>
@@ -207,12 +207,13 @@
   DDPM和Denoising Score Matching的简要回顾
   <a class="anchor" href="#ddpm%e5%92%8cdenoising-score-matching%e7%9a%84%e7%ae%80%e8%a6%81%e5%9b%9e%e9%a1%be">#</a>
 </h2>
-<h3 class="heading" id="ddpmdiffusion-model的变分视角">
-  DDPM：Diffusion Model的变分视角
-  <a class="anchor" href="#ddpmdiffusion-model%e7%9a%84%e5%8f%98%e5%88%86%e8%a7%86%e8%a7%92">#</a>
+<h3 class="heading" id="ddpm变分视角下的-diffusion-model">
+  DDPM：变分视角下的 Diffusion Model
+  <a class="anchor" href="#ddpm%e5%8f%98%e5%88%86%e8%a7%86%e8%a7%92%e4%b8%8b%e7%9a%84-diffusion-model">#</a>
 </h3>
-<p>DDPM可以说是Diffusion Model的最原始的形式，全称是Denoising Diffusion Probabilistic Model。DDPM通过如下的操作完成生成的过程的建模。
-以图像为例，如图1所示，首先向一张图片$x_0$中不断可控的加入高斯噪声，直到这张图片完全变成一张高斯噪声图$x_L$。当我们想要生成一张图片的时候，就可以通过随机采样一张高斯噪声的图片，通过这个过程的逆过程，生成一张图片。</p>
+<p>DDPM可以说是Diffusion Model的最原始的形式，全称是Denoising Diffusion Probabilistic Model。
+DDPM对生成任务的建模分为两个部分，前向过程（forward process）和反向过程（reverse process）。</p>
+<p>以图像为例，如图1所示，首先向一张图片$x_0$中不断可控的加入高斯噪声，直到这张图片完全变成一张高斯噪声图$x_L$。当我们想要生成一张图片的时候，就可以通过随机采样一张高斯噪声的图片，通过这个过程的逆过程，生成一张图片。</p>
 
 <div class="table-outer">
     <table>
@@ -286,17 +287,71 @@
   问题设置
   <a class="anchor" href="#%e9%97%ae%e9%a2%98%e8%ae%be%e7%bd%ae">#</a>
 </h4>
-<p>设一个未知的数据分布为 $p_{data}(x)$，我们假设其服从均值为$\mu$, 方差为$\sigma^2$的高斯分布，即$p_{data}(x) \sim \mathcal{N}(x; \mu, \sigma^2)$<!-- raw HTML omitted -->1<!-- raw HTML omitted -->。</p>
-<p>DDPM的做法是通过将有限的高斯噪声加入到数据当中，生成一系列中间的条件分布，最终将数据分布转化为一个标准的高斯分布。其中加噪的过程可以用下面的公式表示：</p>
+<p>设一个未知的数据分布为 $p_{data}(x)$，我们假设其服从均值为$\mu$, 方差为$\sigma^2$的高斯分布，即$p_{data}(x) \sim \mathcal{N}(x; \mu, \sigma^2)$。</p>
+<p>DDPM的做法是通过将有限的高斯噪声加入到数据当中，生成一系列中间的条件分布$x_t$，$t$为加噪的程度，或者加噪的步数，最终将数据分布转化为一个标准的高斯分布。其中加噪的过程可以用下面的公式表示：</p>
 <p>$$x_t = \alpha_t x_{t-1} + \beta_t \epsilon$$</p>
-<p>其中$\alpha$和$\beta$满足$\alpha ^ 2 + \beta ^ 2 = 1$，$\epsilon \sim \mathcal{N}(0, I)$，$\alpha$是一组事先定义好了的超参数。</p>
+<p>其中$\alpha$和$\beta$满足$\alpha ^ 2 + \beta ^ 2 = 1$，$\epsilon \sim \mathcal{N}(0, I)$，$\alpha$是一组事先定义好的单调递减到0的超参数（满足上述加噪过程的描述）。</p>
 <p>也可以写成</p>
 <p>$$x_t = \alpha_t x_{t-1} + \sqrt{1 - \alpha_t^2} \epsilon \tag{1}$$</p>
 <p>其中$\epsilon \sim \mathcal{N}(0, I)$。</p>
-<h4 class="heading" id="注解">
-  注解
-  <a class="anchor" href="#%e6%b3%a8%e8%a7%a3">#</a>
-</h4>
+<p>当把一个分布$p_{data}(x)$经过T步加噪之后，我们可以得到T+1个概率分布$p_{data}(x), p_1(x_1), \cdots, p_t(x_t) \cdots p_T(x_T)$，且 $p_T(x_T) \sim \mathcal{N}(0, I)$。</p>
+
+<div class="table-outer">
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align: center">
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    
+    
+      
+        <div class="img-container" style="--w: 950; --h: 165;">
+            <img loading="lazy" alt="扩散模型的概率分布" src="/post/imgs/diffusion_sde/DDPM-prob.png" width="950" height="165">
+        </div>
+      
+    
+
+    
+</figure>
+</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center">图2：前向过程生成的概率分布。图片来源：<em>Principles of Diffusion Model</em> by Lai and Song</td>
+            </tr>
+        </tbody>
+    </table>
+</div><p>由公式(1)，我们也可以得到T个条件概率分布，分别是$p(x_1|x_0), \cdots, p(x_t|x_{t-1}), \cdots, p(x_T|x_{T-1})$。这是一个马尔科夫链。</p>
+<p>由于前向过程的加噪是线性操作，因此，我们可以将公式(1)不断递推，一直到$x_0$停止，就可以得到下面直接从$x_0$出发，直接得到第 $t$ 步的概率分布的公式：</p>
+<p>$$
+x_t = \bar{\alpha_i} x_0 + \sqrt{1 - \bar{\alpha_i} ^ 2} \epsilon \tag{2}
+$$</p>
+<p>其中$\bar{\alpha_i} = \prod_{k=1}^{i} \alpha_k = \prod_{k=1}^{i} \sqrt{1 - \beta_k^2}$</p>
+<p>通过公式(1)和(2)，我们可以得到两个条件概率分布的表达式：</p>
+<p>$$
+p(x_i|x_{i-1}) = \mathcal{N}(x_i;\sqrt{1-\beta_i^2} x_{i-1}, \beta_i^2 I)
+$$</p>
+<p>$$
+p(x_i|x_0) = \mathcal{N}(x_i;\bar{\alpha_i} x_0, (1 - \bar{\alpha_i} ^2) I)
+$$</p>
+<p>对于前向过程的描述已经足够，接下来，需要将这个过程逆过来，完成生成建模。也就是寻找$p(x_{i-1}|x_{i})$的表达式。当我们得到了$p(x_{i-1}|x_{i})$表达式之后，就可以通过使用神经网络近似这个表达式，成功将整个前向过程反转，达到生成数据的目的。逆向的过程可以通过前向过程结合贝叶斯公式完成：</p>
+<p>$$p(x_{i-1}|x_{i}) = p(x_i|x_{i-1}) \frac{p_{i-1}(x_{i-1})}{p_i(x_i)} \tag{3}$$</p>
+<p>由于$p_{data}$是不知道的，因此公式(3)中的边缘概率分布是不可求的。因此，需要条件化技巧来解决这个问题。</p>
+<blockquote>
+<p>条件化技巧(Conditioning Technique)：当边缘概率分布不可求时，我们可以通过给定边缘概率分布中的不可求的部分作为条件，从而获得一个有表达式的条件概率分布，而在某些情况下，条件概率分布和边缘概率分布存在着一些好的性质和关系，可以利用这些性质和关系来间接求得或者优化边缘概率分布。</p></blockquote>
 <h3 class="heading" id="denoising-score-matchingdiffusion-model的分数匹配视角">
   Denoising Score Matching：Diffusion Model的分数匹配视角
   <a class="anchor" href="#denoising-score-matchingdiffusion-model%e7%9a%84%e5%88%86%e6%95%b0%e5%8c%b9%e9%85%8d%e8%a7%86%e8%a7%92">#</a>
@@ -309,7 +364,6 @@
   
   <a class="anchor" href="#">#</a>
 </h2>
-<p>1: 由大数定律和中心极限定理，任何分布在样本量趋于无穷大的时候，样本均值都会趋于正态分布。因此，这里高斯分布的假设是合理的。</p>
 
     </div>
   </article>

@@ -6,14 +6,14 @@
     <description>Recent content in Posts on Liu Zhy Blogs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://zhy-liu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Diffusion Model 的一般SDE框架</title>
       <link>https://zhy-liu.github.io/post/sde-diffusion/</link>
-      <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://zhy-liu.github.io/post/sde-diffusion/</guid>
-      <description>SDE formulated Diffusion Model</description>
+      <description>精确地表示定律有且只有一种方式，那就是微分方程。——理查德·P·费曼</description>
     </item>
     <item>
       <title>2026年OKR</title>
