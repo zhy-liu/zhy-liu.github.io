@@ -41,7 +41,7 @@
 <meta property="og:url" content="https://zhy-liu.github.io/post/sde-diffusion/">
   <meta property="og:site_name" content="Liu Zhy Blogs">
   <meta property="og:title" content="Diffusion Model 的一般SDE框架">
-  <meta property="og:description" content="精确地表示定律有且只有一种方式，那就是微分方程。——理查德·P·费曼">
+  <meta property="og:description" content="只有一种方式能够精确的表示一个规律，那就是微分方程。——理查德·P·费曼">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
@@ -169,7 +169,7 @@
     <header class="single-intro-container">
         
         <h1 class="single-title">Diffusion Model 的一般SDE框架</h1>
-        <p class="single-summary">精确地表示定律有且只有一种方式，那就是微分方程。——理查德·P·费曼</p>
+        <p class="single-summary">只有一种方式能够精确的表示一个规律，那就是微分方程。——理查德·P·费曼</p>
         
         <div class="single-subsummary">
           
@@ -212,8 +212,7 @@
   <a class="anchor" href="#ddpm%e5%8f%98%e5%88%86%e8%a7%86%e8%a7%92%e4%b8%8b%e7%9a%84-diffusion-model">#</a>
 </h3>
 <p>DDPM可以说是Diffusion Model的最原始的形式，全称是Denoising Diffusion Probabilistic Model。
-DDPM对生成任务的建模分为两个部分，前向过程（forward process）和反向过程（reverse process）。</p>
-<p>以图像为例，如图1所示，首先向一张图片$x_0$中不断可控的加入高斯噪声，直到这张图片完全变成一张高斯噪声图$x_L$。当我们想要生成一张图片的时候，就可以通过随机采样一张高斯噪声的图片，通过这个过程的逆过程，生成一张图片。</p>
+DDPM对生成任务的建模分为两个部分，前向过程（forward process）和反向过程（reverse process）。以图像为例，如图1所示，在前向过程中，首先向一张图片$x_0$中不断可控的加入高斯噪声，直到这张图片完全变成一张高斯噪声图$x_L$。而当我们想要生成一张图片的时候，就可以通过随机采样一张高斯噪声的图片，通过这个过程的逆过程（反向过程），不断去噪从而生成一张图片。</p>
 
 <div class="table-outer">
     <table>
@@ -281,11 +280,11 @@ DDPM对生成任务的建模分为两个部分，前向过程（forward process�
             </tr>
         </tbody>
     </table>
-</div><p>这个过程虽然简单，但是却满足生成式模型建模最本质的特征之一——将随机性添加到建模过程中。这个思想如此简单，但实现起来却需要十分的精细。我们需要将“可控”用数学定义清楚，其次，我们需要找到一种技术手段，能够将这个过程逆转过来，才能完成生成。</p>
+</div><p>这两个过程虽然简单，但是却满足生成式模型建模本质的特征之一——将随机性添加到建模过程中。这个思想如此简单，但实现起来却需要十分的精细。我们需要将“可控”用数学定义清楚，其次，我们需要找到一种技术手段，能够将这个过程逆转过来，才能完成生成。</p>
 <p>用于定义“可控”的数学工具是机器学习中普遍使用的概率论，将加噪过程你转过来的关键技术手段是神经网络技术。</p>
-<h4 class="heading" id="问题设置">
-  问题设置
-  <a class="anchor" href="#%e9%97%ae%e9%a2%98%e8%ae%be%e7%bd%ae">#</a>
+<h4 class="heading" id="前向过程如何将数据转换成噪音">
+  前向过程：如何将数据转换成噪音
+  <a class="anchor" href="#%e5%89%8d%e5%90%91%e8%bf%87%e7%a8%8b%e5%a6%82%e4%bd%95%e5%b0%86%e6%95%b0%e6%8d%ae%e8%bd%ac%e6%8d%a2%e6%88%90%e5%99%aa%e9%9f%b3">#</a>
 </h4>
 <p>设一个未知的数据分布为 $p_{data}(x)$，我们假设其服从均值为$\mu$, 方差为$\sigma^2$的高斯分布，即$p_{data}(x) \sim \mathcal{N}(x; \mu, \sigma^2)$。</p>
 <p>DDPM的做法是通过将有限的高斯噪声加入到数据当中，生成一系列中间的条件分布$x_t$，$t$为加噪的程度，或者加噪的步数，最终将数据分布转化为一个标准的高斯分布。其中加噪的过程可以用下面的公式表示：</p>
@@ -345,13 +344,27 @@ $$</p>
 p(x_i|x_{i-1}) = \mathcal{N}(x_i;\sqrt{1-\beta_i^2} x_{i-1}, \beta_i^2 I)
 $$</p>
 <p>$$
-p(x_i|x_0) = \mathcal{N}(x_i;\bar{\alpha_i} x_0, (1 - \bar{\alpha_i} ^2) I)
+p(x_i|x_0) = \mathcal{N}(x_i;\bar{\alpha_i} x_0, (1 - \bar{\alpha_i} ^2) I) \tag{3}
 $$</p>
-<p>对于前向过程的描述已经足够，接下来，需要将这个过程逆过来，完成生成建模。也就是寻找$p(x_{i-1}|x_{i})$的表达式。当我们得到了$p(x_{i-1}|x_{i})$表达式之后，就可以通过使用神经网络近似这个表达式，成功将整个前向过程反转，达到生成数据的目的。逆向的过程可以通过前向过程结合贝叶斯公式完成：</p>
-<p>$$p(x_{i-1}|x_{i}) = p(x_i|x_{i-1}) \frac{p_{i-1}(x_{i-1})}{p_i(x_i)} \tag{3}$$</p>
+<h4 class="heading" id="反向过程从噪音生成数据">
+  反向过程：从噪音生成数据
+  <a class="anchor" href="#%e5%8f%8d%e5%90%91%e8%bf%87%e7%a8%8b%e4%bb%8e%e5%99%aa%e9%9f%b3%e7%94%9f%e6%88%90%e6%95%b0%e6%8d%ae">#</a>
+</h4>
+<p>对于前向过程的描述已经足够，接下来，需要将这个过程逆过来，完成生成建模。也就是寻找$p(x_{i-1}|x_{i})$的表达式。当我们得到了$p(x_{i-1}|x_{i})$表达式之后，就可以通过使用神经网络近似这个表达式，将整个前向过程反转，达到生成数据的目的。逆向的过程可以通过前向过程结合贝叶斯公式完成：</p>
+<p>$$p(x_{i-1}|x_{i}) = p(x_i|x_{i-1}) \frac{p_{i-1}(x_{i-1})}{p_i(x_i)} \tag{4}$$</p>
+<p>而神经网络则可以通过最小化反向过程中每个条件概率分布的KL散度来实现：</p>
+<p>$$
+\min D_{KL}(p(x_{i-1}|x_i)||p_{\phi}(x_{i-1}|x_i))
+$$</p>
+<p>其中$\phi$是神经网络。</p>
 <p>由于$p_{data}$是不知道的，因此公式(3)中的边缘概率分布是不可求的。因此，需要条件化技巧来解决这个问题。</p>
 <blockquote>
 <p>条件化技巧(Conditioning Technique)：当边缘概率分布不可求时，我们可以通过给定边缘概率分布中的不可求的部分作为条件，从而获得一个有表达式的条件概率分布，而在某些情况下，条件概率分布和边缘概率分布存在着一些好的性质和关系，可以利用这些性质和关系来间接求得或者优化边缘概率分布。</p></blockquote>
+<p>给定特定的$x_0$，公式(3)可以写成：</p>
+<p>$$</p>
+<p>p(x_{i-1}|x_{i},x_0) = p(x_i|x_{i-1},x_0) \frac{p_{i-1}(x_{i-1}|x_0)}{p_i(x_i|x_0)} \tag{5}</p>
+<p>$$</p>
+<p>通过条件化技巧，公式(5)中的$p_{i-1}(x_{i-1}|x_0)$和$p_i(x_i|x_0)$变得可以计算（公式(3)），因此$p(x_{i-1}|x_{i},x_0)$也是可以计算的了。但是，通过条件化技巧得到的表达式局限于特定的条件，推广到公式(4)上，需要由下面定理的保证。</p>
 <h3 class="heading" id="denoising-score-matchingdiffusion-model的分数匹配视角">
   Denoising Score Matching：Diffusion Model的分数匹配视角
   <a class="anchor" href="#denoising-score-matchingdiffusion-model%e7%9a%84%e5%88%86%e6%95%b0%e5%8c%b9%e9%85%8d%e8%a7%86%e8%a7%92">#</a>
