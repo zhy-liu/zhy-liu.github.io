@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Liu Zhy Blogs</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://zhy-liu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何做好一次演讲</title>
+      <link>https://zhy-liu.github.io/post/how-to-speak/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://zhy-liu.github.io/post/how-to-speak/</guid>
+      <description>Your success in life will be determined largely by your ability to speak, your ablitiy to wirte, and the quality of your ideas, in that order. ———— Patrick Henry Winston</description>
+    </item>
     <item>
       <title>Diffusion Model 的一般SDE框架</title>
       <link>https://zhy-liu.github.io/post/sde-diffusion/</link>
