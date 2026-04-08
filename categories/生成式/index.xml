@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>生成式 on Hugo Narrow</title>
+    <link>http://localhost:1313/categories/%E7%94%9F%E6%88%90%E5%BC%8F/</link>
+    <description>Recent content in 生成式 on Hugo Narrow</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E7%94%9F%E6%88%90%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图像的生成式建模极简史</title>
+      <link>http://localhost:1313/posts/%E5%9B%BE%E5%83%8F%E7%9A%84%E7%94%9F%E6%88%90%E5%BC%8F%E5%BB%BA%E6%A8%A1%E6%9E%81%E7%AE%80%E5%8F%B2/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E5%9B%BE%E5%83%8F%E7%9A%84%E7%94%9F%E6%88%90%E5%BC%8F%E5%BB%BA%E6%A8%A1%E6%9E%81%E7%AE%80%E5%8F%B2/</guid>
+      <description>人们如何看待一个问题</description>
+    </item>
+  </channel>
+</rss>

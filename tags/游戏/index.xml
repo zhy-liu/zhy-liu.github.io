@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>游戏 on Hugo Narrow</title>
+    <link>http://localhost:1313/tags/%E6%B8%B8%E6%88%8F/</link>
+    <description>Recent content in 游戏 on Hugo Narrow</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《冰汽时代》治好了我的完美主义综合征</title>
+      <link>http://localhost:1313/posts/%E5%86%B0%E6%B1%BD%E6%97%B6%E4%BB%A3%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E7%BB%BC%E5%90%88%E5%BE%81/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E5%86%B0%E6%B1%BD%E6%97%B6%E4%BB%A3%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E7%BB%BC%E5%90%88%E5%BE%81/</guid>
+      <description>你的任务是在游戏中建造一个完美的烂摊子</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>音乐 on Hugo Narrow</title>
+    <link>http://localhost:1313/categories/%E9%9F%B3%E4%B9%90/</link>
+    <description>Recent content in 音乐 on Hugo Narrow</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E9%9F%B3%E4%B9%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>当我们听音乐时，我们在听什么</title>
+      <link>http://localhost:1313/posts/%E5%BD%93%E6%88%91%E4%BB%AC%E5%90%AC%E9%9F%B3%E4%B9%90%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E5%90%AC%E4%BB%80%E4%B9%88/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E5%BD%93%E6%88%91%E4%BB%AC%E5%90%AC%E9%9F%B3%E4%B9%90%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E5%90%AC%E4%BB%80%E4%B9%88/</guid>
+      <description>我听音乐，只为了三件事，好听，好听，还是他喵的好听</description>
+    </item>
+  </channel>
+</rss>
