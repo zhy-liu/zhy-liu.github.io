@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技能学习 on Hugo Narrow</title>
-    <link>http://localhost:1313/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/</link>
+    <link>https://hugo-narrow.vercel.app/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content in 技能学习 on Hugo Narrow</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hugo-narrow.vercel.app/categories/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何做好一次演讲</title>
-      <link>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E6%AC%A1%E6%BC%94%E8%AE%B2/</link>
+      <link>https://hugo-narrow.vercel.app/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E6%AC%A1%E6%BC%94%E8%AE%B2/</link>
       <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E6%AC%A1%E6%BC%94%E8%AE%B2/</guid>
+      <guid>https://hugo-narrow.vercel.app/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E6%AC%A1%E6%BC%94%E8%AE%B2/</guid>
       <description>Your success in life will be determined largely by your ability to speak, your ablitiy to wirte, and the quality of your ideas, in that order. —— Patrick Henry Winston</description>
     </item>
   </channel>

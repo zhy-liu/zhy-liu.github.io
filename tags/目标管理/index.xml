@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>目标管理 on Hugo Narrow</title>
-    <link>http://localhost:1313/tags/%E7%9B%AE%E6%A0%87%E7%AE%A1%E7%90%86/</link>
+    <link>https://hugo-narrow.vercel.app/tags/%E7%9B%AE%E6%A0%87%E7%AE%A1%E7%90%86/</link>
     <description>Recent content in 目标管理 on Hugo Narrow</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 30 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E7%9B%AE%E6%A0%87%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hugo-narrow.vercel.app/tags/%E7%9B%AE%E6%A0%87%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2026年OKR</title>
-      <link>http://localhost:1313/posts/2026%E5%B9%B4okr/</link>
+      <link>https://hugo-narrow.vercel.app/posts/2026%E5%B9%B4okr/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2026%E5%B9%B4okr/</guid>
+      <guid>https://hugo-narrow.vercel.app/posts/2026%E5%B9%B4okr/</guid>
       <description>2026年OKR</description>
     </item>
   </channel>

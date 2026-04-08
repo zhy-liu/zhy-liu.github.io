@@ -2,53 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Hugo Narrow</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://hugo-narrow.vercel.app/posts/</link>
     <description>Recent content in Posts on Hugo Narrow</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>图像的生成式建模极简史</title>
-      <link>http://localhost:1313/posts/%E5%9B%BE%E5%83%8F%E7%9A%84%E7%94%9F%E6%88%90%E5%BC%8F%E5%BB%BA%E6%A8%A1%E6%9E%81%E7%AE%80%E5%8F%B2/</link>
-      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%9B%BE%E5%83%8F%E7%9A%84%E7%94%9F%E6%88%90%E5%BC%8F%E5%BB%BA%E6%A8%A1%E6%9E%81%E7%AE%80%E5%8F%B2/</guid>
-      <description>人们如何看待一个问题</description>
-    </item>
+    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://hugo-narrow.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>《冰汽时代》治好了我的完美主义综合征</title>
-      <link>http://localhost:1313/posts/%E5%86%B0%E6%B1%BD%E6%97%B6%E4%BB%A3%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E7%BB%BC%E5%90%88%E5%BE%81/</link>
+      <link>https://hugo-narrow.vercel.app/posts/%E5%86%B0%E6%B1%BD%E6%97%B6%E4%BB%A3%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E7%BB%BC%E5%90%88%E5%BE%81/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%86%B0%E6%B1%BD%E6%97%B6%E4%BB%A3%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E7%BB%BC%E5%90%88%E5%BE%81/</guid>
+      <guid>https://hugo-narrow.vercel.app/posts/%E5%86%B0%E6%B1%BD%E6%97%B6%E4%BB%A3%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E7%BB%BC%E5%90%88%E5%BE%81/</guid>
       <description>你的任务是在游戏中建造一个完美的烂摊子</description>
     </item>
     <item>
       <title>如何做好一次演讲</title>
-      <link>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E6%AC%A1%E6%BC%94%E8%AE%B2/</link>
+      <link>https://hugo-narrow.vercel.app/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E6%AC%A1%E6%BC%94%E8%AE%B2/</link>
       <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E6%AC%A1%E6%BC%94%E8%AE%B2/</guid>
+      <guid>https://hugo-narrow.vercel.app/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E6%AC%A1%E6%BC%94%E8%AE%B2/</guid>
       <description>Your success in life will be determined largely by your ability to speak, your ablitiy to wirte, and the quality of your ideas, in that order. —— Patrick Henry Winston</description>
     </item>
     <item>
       <title>2026年OKR</title>
-      <link>http://localhost:1313/posts/2026%E5%B9%B4okr/</link>
+      <link>https://hugo-narrow.vercel.app/posts/2026%E5%B9%B4okr/</link>
       <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2026%E5%B9%B4okr/</guid>
+      <guid>https://hugo-narrow.vercel.app/posts/2026%E5%B9%B4okr/</guid>
       <description>2026年OKR</description>
     </item>
     <item>
       <title>大明人物传——张子明</title>
-      <link>http://localhost:1313/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/</link>
+      <link>https://hugo-narrow.vercel.app/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/</link>
       <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/</guid>
+      <guid>https://hugo-narrow.vercel.app/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/</guid>
       <description>至城下，大呼：“我张大舍。已见主上，令诸公坚守，救且至。”</description>
-    </item>
-    <item>
-      <title>当我们听音乐时，我们在听什么</title>
-      <link>http://localhost:1313/posts/%E5%BD%93%E6%88%91%E4%BB%AC%E5%90%AC%E9%9F%B3%E4%B9%90%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E5%90%AC%E4%BB%80%E4%B9%88/</link>
-      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%BD%93%E6%88%91%E4%BB%AC%E5%90%AC%E9%9F%B3%E4%B9%90%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E5%90%AC%E4%BB%80%E4%B9%88/</guid>
-      <description>我听音乐，只为了三件事，好听，好听，还是他喵的好听</description>
     </item>
   </channel>
 </rss>

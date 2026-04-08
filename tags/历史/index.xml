@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>历史 on Hugo Narrow</title>
-    <link>http://localhost:1313/tags/%E5%8E%86%E5%8F%B2/</link>
+    <link>https://hugo-narrow.vercel.app/tags/%E5%8E%86%E5%8F%B2/</link>
     <description>Recent content in 历史 on Hugo Narrow</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E5%8E%86%E5%8F%B2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hugo-narrow.vercel.app/tags/%E5%8E%86%E5%8F%B2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>大明人物传——张子明</title>
-      <link>http://localhost:1313/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/</link>
+      <link>https://hugo-narrow.vercel.app/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/</link>
       <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/</guid>
+      <guid>https://hugo-narrow.vercel.app/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/</guid>
       <description>至城下，大呼：“我张大舍。已见主上，令诸公坚守，救且至。”</description>
     </item>
   </channel>
