@@ -36,5 +36,19 @@
       <guid>https://hugo-narrow.vercel.app/tags/%E5%8E%86%E5%8F%B2/</guid>
       <description></description>
     </item>
+    <item>
+      <title>艺术</title>
+      <link>https://hugo-narrow.vercel.app/tags/%E8%89%BA%E6%9C%AF/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://hugo-narrow.vercel.app/tags/%E8%89%BA%E6%9C%AF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>音乐</title>
+      <link>https://hugo-narrow.vercel.app/tags/%E9%9F%B3%E4%B9%90/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://hugo-narrow.vercel.app/tags/%E9%9F%B3%E4%B9%90/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
