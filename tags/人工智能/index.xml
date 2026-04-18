@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>人工智能 on Hugo Narrow</title>
+    <link>http://localhost:1313/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
+    <description>Recent content in 人工智能 on Hugo Narrow</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Transformer技术演进归纳</title>
+      <link>http://localhost:1313/posts/transformer%E6%8A%80%E6%9C%AF%E6%BC%94%E8%BF%9B%E5%BD%92%E7%BA%B3/</link>
+      <pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/transformer%E6%8A%80%E6%9C%AF%E6%BC%94%E8%BF%9B%E5%BD%92%E7%BA%B3/</guid>
+      <description>单独看每一个改进，都让人想惊呼：“这也能发？“</description>
+    </item>
+  </channel>
+</rss>

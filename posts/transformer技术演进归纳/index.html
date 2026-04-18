@@ -9,15 +9,15 @@
   content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<title>Posts | Hugo Narrow</title>
+<title>Transformer技术演进归纳 | Hugo Narrow</title>
 
-<meta name="description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design." />
-<meta name="keywords" content="Hugo, Blog, Theme, Technology, Programming" />
-<meta name="author" content="Hugo Narrow" />
+<meta name="description" content="单独看每一个改进，都让人想惊呼：“这也能发？“" />
+<meta name="keywords" content="人工智能" />
+<meta name="author" content="Zhy-Liu" />
 <meta name="language" content="en-US" />
 
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="http://localhost:1313/posts/" />
+<link rel="canonical" href="http://localhost:1313/posts/transformer%E6%8A%80%E6%9C%AF%E6%BC%94%E8%BF%9B%E5%BD%92%E7%BA%B3/" />
 
 
 
@@ -26,34 +26,34 @@
 
 
 <link rel="manifest" href="/site.webmanifest" />
-<meta property="og:url" content="http://localhost:1313/posts/">
+<meta property="og:url" content="http://localhost:1313/posts/transformer%E6%8A%80%E6%9C%AF%E6%BC%94%E8%BF%9B%E5%BD%92%E7%BA%B3/">
   <meta property="og:site_name" content="Hugo Narrow">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design.">
+  <meta property="og:title" content="Transformer技术演进归纳">
+  <meta property="og:description" content="单独看每一个改进，都让人想惊呼：“这也能发？“">
   <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-09T00:00:00+00:00">
+    <meta property="article:tag" content="人工智能">
     <meta property="og:image" content="http://localhost:1313/images/og-default.avif">
 
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/images/og-default.avif">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design.">
+  <meta name="twitter:title" content="Transformer技术演进归纳">
+  <meta name="twitter:description" content="单独看每一个改进，都让人想惊呼：“这也能发？“">
 
 
-  <meta itemprop="name" content="Posts">
-  <meta itemprop="description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design.">
-  <meta itemprop="datePublished" content="2026-01-20T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-01-20T00:00:00+00:00">
+  <meta itemprop="name" content="Transformer技术演进归纳">
+  <meta itemprop="description" content="单独看每一个改进，都让人想惊呼：“这也能发？“">
+  <meta itemprop="datePublished" content="2025-12-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-12-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="450">
   <meta itemprop="image" content="http://localhost:1313/images/og-default.avif">
+  <meta itemprop="keywords" content="人工智能">
 
 
-
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    title="Hugo Narrow"
-    href="http://localhost:1313/posts/index.xml" />
 
 
 
@@ -181,6 +181,7 @@
 
 
 
+          <script src="/js/toc.js" defer></script>
 
 
 
@@ -284,7 +285,7 @@
           
           <a href="/posts/"
             class="nav-link 
-                nav-active-indicator bg-accent text-accent-foreground
+                text-muted-foreground hover:text-primary hover:bg-primary/10
                focus:ring-primary/20 relative flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
             
             <svg class="h-5 w-5" aria-label="Posts" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -467,10 +468,10 @@
         <a
           href="/posts/"
           class="nav-link 
-            nav-active-indicator bg-accent text-accent-foreground
+            text-muted-foreground hover:text-primary hover:bg-primary/10
            focus:ring-primary/20 relative flex items-center gap-3 rounded-md px-4 py-3 text-sm font-medium transition-all duration-200 ease-out hover:translate-x-1 focus:ring-2 focus:outline-none"
           role="menuitem"
-          aria-current="page">
+          >
           
             <svg class="h-5 w-5" aria-label="Posts" fill="none" stroke="currentColor" viewBox="0 0 24 24">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
@@ -648,6 +649,25 @@
         </li>
       
     
+      
+        
+        <li class="flex items-center gap-1 md:gap-2 min-w-0">
+          <span class="text-muted-foreground/50 shrink-0"
+            ><svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+</svg>
+          </span>
+          <a
+            href="/posts/"
+            class="text-muted-foreground hover:text-primary hover:bg-primary/10 flex items-center gap-1 rounded-lg px-1 md:px-3 py-0.5 md:py-1.5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] shrink-0">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+</svg>
+            <span class="max-w-16 md:max-w-none truncate">Posts</span>
+          </a>
+        </li>
+      
+    
 
     
     <li class="flex items-center gap-1 md:gap-2 min-w-0">
@@ -660,7 +680,7 @@
         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
 </svg>
-        <span class="max-w-32 md:max-w-[16rem] lg:max-w-none truncate">Posts</span>
+        <span class="max-w-32 md:max-w-[16rem] lg:max-w-none truncate">Transformer技术演进归纳</span>
       </span>
     </li>
 
@@ -669,380 +689,369 @@
 
 
       
+
+  
+
+
+  
+  <header class="mb-8">
+    
+
+
+
+
+<div class="post-meta mb-8">
+  
+  <h1 class="text-foreground mb-6 text-3xl leading-tight font-bold md:text-4xl">
+    Transformer技术演进归纳
+  </h1>
+
   
   
-  
-
-  <div class="mx-auto px-4 py-6">
-    
-    <header class="mb-8">
-      <h1 class="text-foreground mb-4 text-3xl font-bold">
-          Posts
-      </h1>
-
-      
-        <p class="text-muted-foreground">
-          
-            Here are all published articles, sorted by date in descending order.
-          
-        </p>
-      
-
-      
-      <div class="text-muted-foreground mt-4 flex items-center gap-4 text-sm">
-        <div class="flex items-center gap-1">
-          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-</svg>
-          <span>
-            
-              5 posts total
-            
-          </span>
-        </div>
-        
-      </div>
-    </header>
-
-    
-    
-    
-      
-        <div class="space-y-4">
-          
-            
-
-
-
-
-<article class="group">
-  <a href="/posts/%E5%86%B0%E6%B1%BD%E6%97%B6%E4%BB%A3%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E7%BB%BC%E5%90%88%E5%BE%81/" class="block">
-    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-      
-      
-      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
-        
-        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
-          《冰汽时代》治好了我的完美主义综合征
-        </h3>
-
-        
-        
-          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
-            你的任务是在游戏中建造一个完美的烂摊子
-          </p>
-        
-
-        
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
-          
-          <div class="flex items-center gap-1.5">
-            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-            <time datetime="2026-01-20" class="font-medium">
-              January 20, 2026
-            </time>
-          </div>
-          
-          
-          
-            <div class="flex items-center gap-1.5">
-              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-              <span class="font-medium truncate">8 minute</span>
-            </div>
-          
-
-          
-          
-            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
-              
-                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
-                  <span class="font-medium">游戏</span>
-                </span>
-              
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</article>
-
-          
-            
-
-
-
-
-<article class="group">
-  <a href="/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E6%AC%A1%E6%BC%94%E8%AE%B2/" class="block">
-    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-      
-      
-      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
-        
-        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
-          如何做好一次演讲
-        </h3>
-
-        
-        
-          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
-            Your success in life will be determined largely by your ability to speak, your ablitiy to wirte, and the quality of your ideas, in that order. —— Patrick Henry Winston
-          </p>
-        
-
-        
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
-          
-          <div class="flex items-center gap-1.5">
-            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-            <time datetime="2026-01-11" class="font-medium">
-              January 11, 2026
-            </time>
-          </div>
-          
-          
-          
-            <div class="flex items-center gap-1.5">
-              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-              <span class="font-medium truncate">1 minute</span>
-            </div>
-          
-
-          
-          
-            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
-              
-                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
-                  <span class="font-medium">学习</span>
-                </span>
-              
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</article>
-
-          
-            
-
-
-
-
-<article class="group">
-  <a href="/posts/2026%E5%B9%B4okr/" class="block">
-    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-      
-      
-      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
-        
-        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
-          2026年OKR
-        </h3>
-
-        
-        
-          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
-            2026年OKR
-          </p>
-        
-
-        
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
-          
-          <div class="flex items-center gap-1.5">
-            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-            <time datetime="2025-12-30" class="font-medium">
-              December 30, 2025
-            </time>
-          </div>
-          
-          
-          
-            <div class="flex items-center gap-1.5">
-              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-              <span class="font-medium truncate">5 minute</span>
-            </div>
-          
-
-          
-          
-            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
-              
-                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
-                  <span class="font-medium">目标管理</span>
-                </span>
-              
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</article>
-
-          
-            
-
-
-
-
-<article class="group">
-  <a href="/posts/transformer%E6%8A%80%E6%9C%AF%E6%BC%94%E8%BF%9B%E5%BD%92%E7%BA%B3/" class="block">
-    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-      
-      
-      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
-        
-        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
-          Transformer技术演进归纳
-        </h3>
-
-        
-        
-          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
-            单独看每一个改进，都让人想惊呼：“这也能发？“
-          </p>
-        
-
-        
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
-          
-          <div class="flex items-center gap-1.5">
-            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-            <time datetime="2025-12-09" class="font-medium">
-              December 09, 2025
-            </time>
-          </div>
-          
-          
-          
-            <div class="flex items-center gap-1.5">
-              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-              <span class="font-medium truncate">1 minute</span>
-            </div>
-          
-
-          
-          
-            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
-              
-                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
-                  <span class="font-medium">人工智能</span>
-                </span>
-              
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</article>
-
-          
-            
-
-
-
-
-<article class="group">
-  <a href="/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/" class="block">
-    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-      
-      
-      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
-        
-        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
-          大明人物传——张子明
-        </h3>
-
-        
-        
-          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
-            至城下，大呼：“我张大舍。已见主上，令诸公坚守，救且至。”
-          </p>
-        
-
-        
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
-          
-          <div class="flex items-center gap-1.5">
-            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-            <time datetime="2025-12-09" class="font-medium">
-              December 09, 2025
-            </time>
-          </div>
-          
-          
-          
-            <div class="flex items-center gap-1.5">
-              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-              <span class="font-medium truncate">3 minute</span>
-            </div>
-          
-
-          
-          
-            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
-              
-                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
-                  <span class="font-medium">历史</span>
-                </span>
-              
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</article>
-
-          
-        </div>
-      
-    
-
-    
-    
-
-
-
-
-
-
+  <div class="text-muted-foreground mb-6 text-lg leading-relaxed">
+    单独看每一个改进，都让人想惊呼：“这也能发？“
   </div>
+  
+
+  
+  <div class="bg-card border-border rounded-xl border">
+
+    
+        
+        <div class="p-6">
+
+          
+          <div class="text-muted-foreground flex flex-wrap items-center gap-3 text-sm mb-4">
+            
+            <div class="flex items-center gap-2">
+              <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+              <time datetime="2025-12-09">
+                December 09, 2025
+              </time>
+            </div>
+
+            
+            
+
+            
+            
+            <div class="flex items-center gap-2">
+              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+
+              <span>1 minute</span>
+            </div>
+            
+
+            
+            
+            <div class="flex items-center gap-2">
+              <svg class="h-4 w-4" aria-label="Word count" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+</svg>
+
+              <span>450 words</span>
+            </div>
+            
+          </div>
+
+          
+          <div class="space-y-3 pt-4 border-t border-border">
+            <div class="flex items-center gap-2">
+              <div class="flex-shrink-0">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+</svg>
+
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="text-muted-foreground text-sm font-medium">
+                    Categories:
+                  </span>
+                  <a href="/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"
+                    class="inline-flex items-center rounded-full px-2.5 py-1 text-sm font-medium transition-all duration-200 bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground">
+                    人工智能
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex-shrink-0">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+</svg>
+
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="text-muted-foreground text-sm font-medium">
+                    Tags:
+                  </span>
+                  <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"
+                    class="inline-flex items-center rounded-full px-2.5 py-1 text-sm font-medium transition-all duration-200 bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground">
+                    人工智能
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+          <div class="flex items-center gap-2 pt-4 border-t border-border mt-4">
+            <svg class="h-4 w-4" aria-label="Author" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+</svg>
+
+            <span class="text-muted-foreground text-sm">
+              Author:
+            </span>
+            <span class="text-foreground text-sm font-medium">
+              Zhy-Liu
+            </span>
+          </div>
+          
+    </div>
+  </div>
+</div>
+
+  </header>
+
+  
+  <article class="prose prose-neutral dark:prose-invert mb-12 max-w-none">
+    <p>Transformer在2017年由Google提出，经历了多年的技术演进，现在成为了深度神经网络的主流架构。本文旨在通过回归Transformer问世以来的技术演进历程，梳理目前最先进的大语言模型技术的发展历程，一窥科技创新的微观本质。</p>
+<h1 id="transformer的基本架构与数学计算">Transformer的基本架构与数学计算</h1>
+<p>本节介绍transformer的基本架构及其数学计算公式，从直觉上和数学原理上为transformer为什么能够起作用给出一个合理的解释。</p>
+<h2 id="transformer-的基本架构">Transformer 的基本架构</h2>
+<p>一个transformer网络如图所示，它由如下几个基本模块组成：</p>
+<ol>
+<li>输入编码</li>
+<li>位置编码</li>
+<li>多头注意力机制</li>
+<li>残差链接和归一化</li>
+<li>前馈神经网络</li>
+<li>Dropout</li>
+<li>Softmax</li>
+</ol>
+<p>其中输入编码、残差链接和归一化、前馈神经网络、dropout和softmax都是最为标准的深度神经网络技术，这里不做介绍。</p>
+<p>这里着重介绍两个部分，多头注意力机制和位置编码。</p>
+<p>
+<figure class="image-figure not-prose my-8"
+        data-lightbox-enabled="true"
+        data-gallery-type="auto"
+        data-image-width="0"
+        data-image-height="0"
+        data-image-src="gallery/transformer-base.png">
+  <div class="image-container">
+    <img
+    src="gallery/transformer-base.png"
+    alt="Transformer"
+    
+    
+    loading="lazy"
+    decoding="async"
+    data-gallery-src="gallery/transformer-base.png"
+    data-gallery-alt="Transformer"
+    data-gallery-title="" /></div>
+
+  </figure></p>
+<h3 id="位置编码">位置编码</h3>
+<p>我们设输入的数据经过embedding层之后为$x$。</p>
+<h3 id="多头注意力机制">多头注意力机制</h3>
+<p>注意力机制的计算公式为</p>
+<h2 id="transformer中位置编码的进化">Transformer中位置编码的进化</h2>
+<h1 id="transformer的技术演进历程">Transformer的技术演进历程</h1>
+
+  </article>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <div class="post-license bg-muted/30 border-border mb-8 rounded-xl border p-6">
+    <div class="flex items-start gap-4">
+      
+      <div
+        class="bg-primary/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg">
+        <svg class="h-6 w-6" aria-label="许可证" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+</svg>
+      </div>
+
+      
+      <div class="flex-1 min-w-0">
+        <h3 class="text-foreground mb-2 text-lg font-semibold">
+          Copyright Notice
+        </h3>
+
+        <div class="text-muted-foreground space-y-2 text-sm">
+          
+          
+          <p>
+            <strong>Author:</strong>
+            Hugo Narrow
+          </p>
+          
+
+          
+          <p>
+            <strong>Link:</strong>
+            <a
+              href="http://localhost:1313/posts/transformer%E6%8A%80%E6%9C%AF%E6%BC%94%E8%BF%9B%E5%BD%92%E7%BA%B3/"
+              class="text-primary hover:text-primary/80 transition-colors break-all hyphens-auto duration-200">
+              http://localhost:1313/posts/transformer%E6%8A%80%E6%9C%AF%E6%BC%94%E8%BF%9B%E5%BD%92%E7%BA%B3/
+            </a>
+          </p>
+
+          
+          <p>
+            <strong>License:</strong>
+            
+              <a
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:text-primary/80 transition-colors duration-200">
+                CC BY-NC-SA 4.0
+              </a>
+            
+          </p>
+
+          
+          
+          <p class="text-xs">
+            This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please attribute the source, use non-commercially, and maintain the same license.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  
+
+
+
+
+
+  <nav
+    class="post-navigation mb-12"
+    aria-label="Post navigation">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      
+      <div class="nav-item">
+        
+          <a
+            href="/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/"
+            class="group bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex min-h-[140px] flex-col justify-between rounded-xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+            <div>
+              <div class="mb-3 flex items-center gap-3">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+</svg>
+                <span class="text-muted-foreground text-sm font-medium">
+                  Previous
+                </span>
+              </div>
+
+              <h3
+                class="text-foreground group-hover:text-primary mb-3 line-clamp-2 text-lg leading-tight font-semibold transition-colors duration-200">
+                大明人物传——张子明
+              </h3>
+            </div>
+
+            <div
+              class="text-muted-foreground mt-auto flex items-center gap-2 text-xs">
+              <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+              <time datetime="2025-12-09">
+                Dec 09
+              </time>
+            </div>
+          </a>
+        
+      </div>
+
+      
+      <div class="nav-item">
+        
+          <a
+            href="/posts/2026%E5%B9%B4okr/"
+            class="group bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex min-h-[140px] flex-col justify-between rounded-xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+            <div>
+              <div class="mb-3 flex items-center justify-end gap-3">
+                <span class="text-muted-foreground text-sm font-medium">
+                  Next
+                </span>
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+</svg>
+              </div>
+
+              <h3
+                class="text-foreground group-hover:text-primary mb-3 line-clamp-2 text-right text-lg leading-tight font-semibold transition-colors duration-200">
+                2026年OKR
+              </h3>
+            </div>
+
+            <div
+              class="text-muted-foreground mt-auto flex items-center justify-end gap-2 text-xs">
+              <time datetime="2025-12-30">
+                Dec 30
+              </time>
+              <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+            </div>
+          </a>
+        
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
 
     </div>
 
@@ -1292,7 +1301,43 @@
 
 
 
-    
+    <aside id="toc-container" class="toc-center" data-position="center">
+      <div id="toc-center" class="pointer-events-none fixed left-0 right-0 top-28 z-40 mx-auto w-full max-w-4xl px-4 transition-all duration-300">
+        <div class="pointer-events-auto relative mx-auto w-fit">
+          <button id="toc-center-toggle" class="bg-card/80 border-border text-muted-foreground hover:text-primary hover:bg-primary/10 flex items-center gap-2 rounded-full border px-4 py-1.5 text-sm backdrop-blur-sm transition-colors cursor-pointer shadow-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="8" x2="21" y1="6" y2="6"/>
+  <line x1="8" x2="21" y1="12" y2="12"/>
+  <line x1="8" x2="21" y1="18" y2="18"/>
+  <line x1="3" x2="3.01" y1="6" y2="6"/>
+  <line x1="3" x2="3.01" y1="12" y2="12"/>
+  <line x1="3" x2="3.01" y1="18" y2="18"/>
+</svg>
+
+            <span id="toc-center-title" class="truncate max-w-[200px]">Table of Contents</span>
+            <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+</svg>
+          </button>
+          
+          
+          <div id="toc-center-dropdown" class="bg-card border-border absolute left-1/2 top-full mt-2 hidden max-h-[60vh] w-[280px] -translate-x-1/2 overflow-y-auto rounded-xl border p-4 shadow-lg transition-all opacity-0 origin-top scale-95 scrollbar-hide">
+            <div id="toc-center-content" class="text-sm [&_nav>ul]:pl-0 [&_ul]:list-none [&_ul]:pl-4 [&_li]:my-1.5 [&_a]:block [&_a]:rounded-md [&_a]:px-2 [&_a]:py-1 [&_a]:text-muted-foreground [&_a]:transition-colors [&_a:hover]:bg-primary/10 [&_a:hover]:text-primary [&_a.active]:bg-primary/10 [&_a.active]:text-primary [&_a.active]:font-medium [&_a]:truncate">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#transformer-的基本架构">Transformer 的基本架构</a>
+      <ul>
+        <li><a href="#位置编码">位置编码</a></li>
+        <li><a href="#多头注意力机制">多头注意力机制</a></li>
+      </ul>
+    </li>
+    <li><a href="#transformer中位置编码的进化">Transformer中位置编码的进化</a></li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </div></aside>
     
 <div
   id="search-overlay"
