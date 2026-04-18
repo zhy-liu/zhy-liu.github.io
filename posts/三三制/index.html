@@ -49,7 +49,7 @@
   <meta itemprop="description" content="苟住，就是胜利">
   <meta itemprop="datePublished" content="2026-02-26T00:00:00+00:00">
   <meta itemprop="dateModified" content="2026-02-26T00:00:00+00:00">
-  <meta itemprop="wordCount" content="4716">
+  <meta itemprop="wordCount" content="4718">
   <meta itemprop="image" content="https://hugo-narrow.vercel.app/images/og-default.avif">
   <meta itemprop="keywords" content="微型研究">
 
@@ -789,7 +789,7 @@
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
 </svg>
 
-              <span>4716 words</span>
+              <span>4718 words</span>
             </div>
             
           </div>
@@ -1259,12 +1259,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>在真实世界中的一个常识是，成功往往是做对/做好了一件或者几件事，但是失败缺有各种各样的原因。</p>
 <p>因此，对于上述优化目标的约束条件大约可以写成这样：</p>
 <p>$$
-\text{无限游戏：} \min Risk(x_1, x_2, &hellip;, x_m) \</p>
-<p>\text{s.t. } f_i(x_1, x_2, &hellip;, x_m) \leq 0, i = 1, 2, &hellip; p
+\text{无限游戏：} \min Risk(x_1, x_2, &hellip;, x_m)
+$$
+$$
+\text{s.t. } f_i(x_1, x_2, &hellip;, x_m) \leq 0, i = 1, 2, &hellip; p
 $$</p>
 <p>$$
-\text{有限游戏：} \max Return(x_1, x_2, &hellip;, x_n)  \</p>
-<p>\text{s.t. } g_j(x_1, x_2, &hellip;, x_n) = 0, j = 1, 2, &hellip; q
+\text{有限游戏：} \max Return(x_1, x_2, &hellip;, x_n)
+$$
+$$
+\text{s.t. } g_j(x_1, x_2, &hellip;, x_n) = 0, j = 1, 2, &hellip; q
 $$</p>
 <p>而且，一般来说, $m \geq n, p \geq q $，函数$f$要比$g$简单。也就是说，无限游戏需要考虑的约束条件很多，约束变量也会很多，但是每个约束都比较简单，只需要在某个范围就行。但是无限游戏虽然约束条件会比较少，变量也比较少，但是要求精准。综合下来，无限游戏未必比有限游戏简单。</p>
 <p>这满足风险分散的基本原理。在投资学中，投资组合理论可以从数学上被证明能够有效降低风险。而所谓的三三制，便是可以看作是一种类型的“投资“组合。</p>
