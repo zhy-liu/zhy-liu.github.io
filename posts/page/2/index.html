@@ -9,7 +9,7 @@
   content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<title>404 Page not found | Hugo Narrow</title>
+<title>Posts | Hugo Narrow</title>
 
 <meta name="description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design." />
 <meta name="keywords" content="Hugo, Blog, Theme, Technology, Programming" />
@@ -17,7 +17,7 @@
 <meta name="language" content="en-US" />
 
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://hugo-narrow.vercel.app/404.html" />
+<link rel="canonical" href="https://hugo-narrow.vercel.app/posts/" />
 
 
 
@@ -26,9 +26,9 @@
 
 
 <link rel="manifest" href="/site.webmanifest" />
-<meta property="og:url" content="https://hugo-narrow.vercel.app/404.html">
+<meta property="og:url" content="https://hugo-narrow.vercel.app/posts/">
   <meta property="og:site_name" content="Hugo Narrow">
-  <meta property="og:title" content="404 Page not found">
+  <meta property="og:title" content="Posts">
   <meta property="og:description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design.">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
@@ -37,15 +37,23 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://hugo-narrow.vercel.app/images/og-default.avif">
-  <meta name="twitter:title" content="404 Page not found">
+  <meta name="twitter:title" content="Posts">
   <meta name="twitter:description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design.">
 
 
-  <meta itemprop="name" content="404 Page not found">
+  <meta itemprop="name" content="Posts">
   <meta itemprop="description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design.">
+  <meta itemprop="datePublished" content="2026-04-11T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-04-11T00:00:00+00:00">
   <meta itemprop="image" content="https://hugo-narrow.vercel.app/images/og-default.avif">
 
 
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="Hugo Narrow"
+    href="https://hugo-narrow.vercel.app/posts/index.xml" />
 
 
 
@@ -307,7 +315,7 @@
           
           <a href="/posts/"
             class="nav-link 
-                text-muted-foreground hover:text-primary hover:bg-primary/10
+                nav-active-indicator bg-accent text-accent-foreground
                focus:ring-primary/20 relative flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
             
             <svg class="h-5 w-5" aria-label="Posts" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -490,10 +498,10 @@
         <a
           href="/posts/"
           class="nav-link 
-            text-muted-foreground hover:text-primary hover:bg-primary/10
+            nav-active-indicator bg-accent text-accent-foreground
            focus:ring-primary/20 relative flex items-center gap-3 rounded-md px-4 py-3 text-sm font-medium transition-all duration-200 ease-out hover:translate-x-1 focus:ring-2 focus:outline-none"
           role="menuitem"
-          >
+          aria-current="page">
           
             <svg class="h-5 w-5" aria-label="Posts" fill="none" stroke="currentColor" viewBox="0 0 24 24">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
@@ -683,7 +691,7 @@
         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
 </svg>
-        <span class="max-w-32 md:max-w-[16rem] lg:max-w-none truncate">404 Page not found</span>
+        <span class="max-w-32 md:max-w-[16rem] lg:max-w-none truncate">Posts</span>
       </span>
     </li>
 
@@ -692,47 +700,217 @@
 
 
       
-  <div class="flex min-h-[60vh] flex-col items-center justify-center text-center">
-    <div class="mb-8">
-      <div class="text-9xl font-bold text-primary opacity-20">404</div>
+  
+  
+  
+
+  <div class="mx-auto px-4 py-6">
+    
+    <header class="mb-8">
+      <h1 class="text-foreground mb-4 text-3xl font-bold">
+          Posts
+      </h1>
+
+      
+        <p class="text-muted-foreground">
+          
+            Here are all published articles, sorted by date in descending order.
+          
+        </p>
+      
+
+      
+      <div class="text-muted-foreground mt-4 flex items-center gap-4 text-sm">
+        <div class="flex items-center gap-1">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+</svg>
+          <span>
+            
+              7 posts total
+            
+          </span>
+        </div>
+        
+          <div class="flex items-center gap-1">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2l3.09 6.26L22 9l-5.91.74L12 16l-4.09-6.26L2 9l5.91-.74L12 2z" />
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 17l10 5 10-5" />
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 12l10 5 10-5" />
+</svg>
+            <span>
+              2 pages total
+            </span>
+          </div>
+        
+      </div>
+    </header>
+
+    
+    
+    
+      
+        <div class="space-y-4">
+          
+            
+
+
+
+
+<article class="group">
+  <a href="/posts/%E5%A4%A7%E6%98%8E%E4%BA%BA%E7%89%A9%E4%BC%A0%E5%BC%A0%E5%AD%90%E6%98%8E/" class="block">
+    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+      
+      
+      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
+        
+        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
+          大明人物传——张子明
+        </h3>
+
+        
+        
+          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
+            至城下，大呼：“我张大舍。已见主上，令诸公坚守，救且至。”
+          </p>
+        
+
+        
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
+          
+          <div class="flex items-center gap-1.5">
+            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+            <time datetime="2025-12-09" class="font-medium">
+              December 09, 2025
+            </time>
+          </div>
+          
+          
+          
+            <div class="flex items-center gap-1.5">
+              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+
+              <span class="font-medium truncate">3 minute</span>
+            </div>
+          
+
+          
+          
+            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
+                  <span class="font-medium">历史</span>
+                </span>
+              
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
+
+          
+        </div>
+      
+    
+
+    
+    
+
+
+
+
+  <nav
+    class="pagination mt-12"
+    aria-label="Pagination navigation">
+    <div class="flex items-center justify-center gap-2">
+      
+      
+        <a
+          href="/posts/"
+          class="bg-card border-border hover:bg-accent/50 hover:border-primary/20 inline-flex items-center gap-2 rounded-lg border px-4 py-2 font-medium transition-all duration-300"
+          aria-label="Previous page">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+</svg>
+          <span class="hidden sm:inline"
+            >Previous</span
+          >
+        </a>
+      
+
+
+      
+      <div class="flex items-center gap-1">
+        
+        
+
+
+        
+        
+
+
+        
+        
+          
+          
+            
+              
+              <a
+                href="/posts/"
+                class="border-border hover:bg-accent/50 hover:border-primary/20 flex h-10 w-10 items-center justify-center rounded-lg border font-medium transition-all duration-300">
+                1
+              </a>
+            
+          
+        
+          
+          
+            
+              
+              <span
+                class="bg-primary text-primary-foreground flex h-10 w-10 items-center justify-center rounded-lg font-medium"
+                aria-current="page">
+                2
+              </span>
+            
+          
+        
+
+
+        
+        
+      </div>
+
+      
+      
+        <span
+          class="bg-muted/30 border-border/50 text-muted-foreground inline-flex cursor-not-allowed items-center gap-2 rounded-lg border px-4 py-2">
+          <span class="hidden sm:inline"
+            >Next</span
+          >
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+</svg>
+        </span>
+      
+
     </div>
 
     
-    <h1 class="text-foreground mb-4 text-4xl font-bold md:text-5xl">
-      Page Not Found
-    </h1>
-
-    
-    <p class="text-muted-foreground mb-8 max-w-md text-lg">
-      Sorry, the page you are looking for does not exist or has been removed.
-    </p>
-
-    
-    <div class="flex flex-col gap-4 sm:flex-row">
-      
-      <a
-        href="/"
-        class="bg-primary text-primary-foreground hover:bg-primary/90 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg px-6 py-3 font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
-        <svg class="h-4 w-4" aria-label="Home" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 12 2-2m0 0 7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-</svg>
-
-        <span>Back to Home</span>
-      </a>
-
-      
-      <button
-        onclick="history.back()"
-        class="bg-muted text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg px-6 py-3 font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
-        <svg class="h-4 w-4" aria-label="Go Back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="m12 19-7-7 7-7"/>
-  <path d="M19 12H5"/>
-</svg>
-
-        <span>Go Back</span>
-      </button>
+    <div class="text-muted-foreground mt-4 text-center text-sm">
+      Page 2 of 2
     </div>
-    
+  </nav>
+
+
+
   </div>
 
     </div>
