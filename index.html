@@ -14,7 +14,7 @@
 
 <meta name="description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design." />
 <meta name="keywords" content="Hugo, Blog, Theme, Technology, Programming" />
-<meta name="author" content="map[avatar:/images/avatar.png description:Hi～ 这里会分享一些有意思的东西和硬核的AI知识。希望你也觉得有意思或者对你有帮助！ name:Liu-Zhy的博客 social:[map[icon:github name:GitHub url:https://github.com/tom2almighty/hugo-narrow] map[icon:twitter name:Twitter url:https://twitter.com/username] map[icon:email name:Email url:liuzhy2023@shanghaitech.edu.cn]] title:盐以律己，甜以待人！]" />
+<meta name="author" content="map[avatar:/images/avatar.png description:Hi～ 这里会分享一些有意思的东西和硬核的AI知识。希望你也觉得有意思或者对你有帮助！ name:Liu-Zhy的博客 social:[map[icon:github name:GitHub url:https://github.com/tom2almighty/hugo-narrow] map[icon:google-scholar name:Google Scholar url:https://scholar.google.com/citations?user=Fdtto0wAAAAJ&amp;hl=zh-CN] map[icon:email name:Email url:liuzhy2023@shanghaitech.edu.cn]] title:盐以律己，甜以待人！]" />
 <meta name="language" content="en-US" />
 
 <meta name="robots" content="index, follow" />
@@ -696,15 +696,16 @@
                 </a>
               
                 <a
-                  href="https://twitter.com/username"
+                  href="https://scholar.google.com/citations?user=Fdtto0wAAAAJ&amp;hl=zh-CN"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="bg-muted text-muted-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-                  title="Twitter">
+                  title="Google Scholar">
                   
-                    <svg class="h-4 w-4" aria-label="Twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"/></svg>
+                    <svg class="h-4 w-4" aria-label="Google Scholar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 1 11l11 9 9-7.36V20h2v-9L12 2Zm0 2.58L19.84 11 12 17.42 4.16 11 12 4.58Z"/><path fill="currentColor" d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Zm0 2a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6Z"/></svg>
+
                   
-                  <span class="text-sm font-medium">Twitter</span>
+                  <span class="text-sm font-medium">Google Scholar</span>
                 </a>
               
                 <a
@@ -802,6 +803,270 @@
 
 
 <article class="group">
+  <a href="/posts/pytorch%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/" class="block">
+    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+      
+      
+      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
+        
+        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
+          Pytorch是如何工作的
+        </h3>
+
+        
+        
+          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
+            Pytorch是如何工作的
+          </p>
+        
+
+        
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
+          
+          <div class="flex items-center gap-1.5">
+            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+            <time datetime="2026-06-14" class="font-medium">
+              June 14, 2026
+            </time>
+          </div>
+          
+          
+          
+            <div class="flex items-center gap-1.5">
+              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+
+              <span class="font-medium truncate">1 minute</span>
+            </div>
+          
+
+          
+          
+            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
+                  <span class="font-medium">Neural Network</span>
+                </span>
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
+                  <span class="font-medium">AI</span>
+                </span>
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
+                  <span class="font-medium">Pytorch</span>
+                </span>
+              
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
+
+      
+        
+
+
+
+
+<article class="group">
+  <a href="/posts/%E5%BD%93%E7%AE%97%E6%B3%95%E9%81%AE%E4%BD%8F%E4%BA%86%E4%BA%BA%E7%9A%84%E5%BF%83/" class="block">
+    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+      
+      
+      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
+        
+        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
+          当算法遮住了人的心
+        </h3>
+
+        
+        
+          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
+            xxxxxx
+          </p>
+        
+
+        
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
+          
+          <div class="flex items-center gap-1.5">
+            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+            <time datetime="2026-06-14" class="font-medium">
+              June 14, 2026
+            </time>
+          </div>
+          
+          
+          
+            <div class="flex items-center gap-1.5">
+              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+
+              <span class="font-medium truncate">1 minute</span>
+            </div>
+          
+
+          
+          
+            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
+                  <span class="font-medium">life</span>
+                </span>
+              
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
+
+      
+        
+
+
+
+
+<article class="group">
+  <a href="/posts/%E9%87%8D%E6%B8%A9%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF1-%E5%BD%92%E4%B8%80%E5%8C%96normalization%E6%8A%80%E6%9C%AF/" class="block">
+    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+      
+      
+      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
+        
+        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
+          重温神经网络技术1 —— 归一化（Normalization）技术
+        </h3>
+
+        
+        
+          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
+            重温神经网络中的归一化技术
+          </p>
+        
+
+        
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
+          
+          <div class="flex items-center gap-1.5">
+            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+            <time datetime="2026-06-14" class="font-medium">
+              June 14, 2026
+            </time>
+          </div>
+          
+          
+          
+            <div class="flex items-center gap-1.5">
+              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+
+              <span class="font-medium truncate">2 minute</span>
+            </div>
+          
+
+          
+          
+            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
+                  <span class="font-medium">Neural Network</span>
+                </span>
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
+                  <span class="font-medium">AI</span>
+                </span>
+              
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
+
+      
+        
+
+
+
+
+<article class="group">
+  <a href="/posts/%E9%87%8D%E6%B8%A9%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF1-%E7%BB%9F%E8%AE%A1%E9%87%8F%E4%B8%8E%E8%B6%85%E5%8F%82%E6%95%B0/" class="block">
+    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+      
+      
+      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
+        
+        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
+          重温神经网络技术1 —— 统计量与超参数
+        </h3>
+
+        
+        
+          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
+            统计量与超参设置之间的关系
+          </p>
+        
+
+        
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
+          
+          <div class="flex items-center gap-1.5">
+            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+            <time datetime="2026-06-14" class="font-medium">
+              June 14, 2026
+            </time>
+          </div>
+          
+          
+          
+
+          
+          
+            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
+                  <span class="font-medium">Neural Network</span>
+                </span>
+              
+                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
+                  <span class="font-medium">AI</span>
+                </span>
+              
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
+
+      
+        
+
+
+
+
+<article class="group">
   <a href="/posts/%E8%84%86%E5%BC%B1%E7%9A%84%E7%94%9F%E6%B4%BB%E4%B9%A0%E6%83%AF%E6%94%B9%E8%89%AF%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB%E4%B9%A0%E6%83%AF%E6%94%B9%E8%89%AF%E5%B0%8F%E7%BB%93/" class="block">
     <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
       
@@ -849,262 +1114,6 @@
               
                 <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
                   <span class="font-medium">life</span>
-                </span>
-              
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</article>
-
-      
-        
-
-
-
-
-<article class="group">
-  <a href="/posts/%E4%B8%89%E4%B8%89%E5%88%B6/" class="block">
-    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-      
-      
-      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
-        
-        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
-          三三制
-        </h3>
-
-        
-        
-          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
-            苟住，就是胜利
-          </p>
-        
-
-        
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
-          
-          <div class="flex items-center gap-1.5">
-            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-            <time datetime="2026-02-26" class="font-medium">
-              February 26, 2026
-            </time>
-          </div>
-          
-          
-          
-            <div class="flex items-center gap-1.5">
-              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-              <span class="font-medium truncate">10 minute</span>
-            </div>
-          
-
-          
-          
-            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
-              
-                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
-                  <span class="font-medium">微型研究</span>
-                </span>
-              
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</article>
-
-      
-        
-
-
-
-
-<article class="group">
-  <a href="/posts/%E5%86%B0%E6%B1%BD%E6%97%B6%E4%BB%A3%E6%B2%BB%E5%A5%BD%E4%BA%86%E6%88%91%E7%9A%84%E5%AE%8C%E7%BE%8E%E4%B8%BB%E4%B9%89%E7%BB%BC%E5%90%88%E5%BE%81/" class="block">
-    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-      
-      
-      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
-        
-        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
-          《冰汽时代》治好了我的完美主义综合征
-        </h3>
-
-        
-        
-          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
-            你的任务是在游戏中建造一个完美的烂摊子
-          </p>
-        
-
-        
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
-          
-          <div class="flex items-center gap-1.5">
-            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-            <time datetime="2026-01-20" class="font-medium">
-              January 20, 2026
-            </time>
-          </div>
-          
-          
-          
-            <div class="flex items-center gap-1.5">
-              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-              <span class="font-medium truncate">8 minute</span>
-            </div>
-          
-
-          
-          
-            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
-              
-                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
-                  <span class="font-medium">游戏</span>
-                </span>
-              
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</article>
-
-      
-        
-
-
-
-
-<article class="group">
-  <a href="/posts/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E4%B8%80%E6%AC%A1%E6%BC%94%E8%AE%B2/" class="block">
-    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-      
-      
-      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
-        
-        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
-          如何做好一次演讲
-        </h3>
-
-        
-        
-          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
-            Your success in life will be determined largely by your ability to speak, your ablitiy to wirte, and the quality of your ideas, in that order. —— Patrick Henry Winston
-          </p>
-        
-
-        
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
-          
-          <div class="flex items-center gap-1.5">
-            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-            <time datetime="2026-01-11" class="font-medium">
-              January 11, 2026
-            </time>
-          </div>
-          
-          
-          
-            <div class="flex items-center gap-1.5">
-              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-              <span class="font-medium truncate">1 minute</span>
-            </div>
-          
-
-          
-          
-            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
-              
-                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
-                  <span class="font-medium">学习</span>
-                </span>
-              
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </a>
-</article>
-
-      
-        
-
-
-
-
-<article class="group">
-  <a href="/posts/2026%E5%B9%B4okr/" class="block">
-    <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 relative flex flex-col md:flex-row overflow-hidden rounded-xl border transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
-      
-      
-      <div class="flex flex-1 flex-col p-6 gap-4 justify-center">
-        
-        <h3 class="text-foreground group-hover:text-primary text-xl font-bold leading-tight transition-colors duration-200">
-          2026年OKR
-        </h3>
-
-        
-        
-          <p class="text-muted-foreground text-sm leading-relaxed line-clamp-3 md:line-clamp-2">
-            2026年OKR
-          </p>
-        
-
-        
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground mt-2">
-          
-          <div class="flex items-center gap-1.5">
-            <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-</svg>
-
-            <time datetime="2025-12-30" class="font-medium">
-              December 30, 2025
-            </time>
-          </div>
-          
-          
-          
-            <div class="flex items-center gap-1.5">
-              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-              <span class="font-medium truncate">5 minute</span>
-            </div>
-          
-
-          
-          
-            <div class="flex flex-wrap items-center gap-1.5 ml-auto md:ml-0">
-              
-                <span class="bg-muted/50 border-muted/30 flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs">
-                  <span class="font-medium">目标管理</span>
                 </span>
               
             </div>

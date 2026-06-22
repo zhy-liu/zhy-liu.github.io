@@ -9,15 +9,15 @@
   content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<title>Tags | Hugo Narrow</title>
+<title>Pytorch是如何工作的 | Hugo Narrow</title>
 
-<meta name="description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design." />
-<meta name="keywords" content="Hugo, Blog, Theme, Technology, Programming" />
-<meta name="author" content="Hugo Narrow" />
+<meta name="description" content="Pytorch是如何工作的" />
+<meta name="keywords" content="Neural Network, AI, Pytorch" />
+<meta name="author" content="Zhy-Liu" />
 <meta name="language" content="en-US" />
 
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://hugo-narrow.vercel.app/tags/" />
+<link rel="canonical" href="https://hugo-narrow.vercel.app/posts/pytorch%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/" />
 
 
 
@@ -26,34 +26,36 @@
 
 
 <link rel="manifest" href="/site.webmanifest" />
-<meta property="og:url" content="https://hugo-narrow.vercel.app/tags/">
+<meta property="og:url" content="https://hugo-narrow.vercel.app/posts/pytorch%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/">
   <meta property="og:site_name" content="Hugo Narrow">
-  <meta property="og:title" content="Tags">
-  <meta property="og:description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design.">
+  <meta property="og:title" content="Pytorch是如何工作的">
+  <meta property="og:description" content="Pytorch是如何工作的">
   <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-06-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-06-14T00:00:00+00:00">
+    <meta property="article:tag" content="Neural Network">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Pytorch">
     <meta property="og:image" content="https://hugo-narrow.vercel.app/images/og-default.avif">
 
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://hugo-narrow.vercel.app/images/og-default.avif">
-  <meta name="twitter:title" content="Tags">
-  <meta name="twitter:description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design.">
+  <meta name="twitter:title" content="Pytorch是如何工作的">
+  <meta name="twitter:description" content="Pytorch是如何工作的">
 
 
-  <meta itemprop="name" content="Tags">
-  <meta itemprop="description" content="A modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. Support custom themes, dark mode, and responsive design.">
+  <meta itemprop="name" content="Pytorch是如何工作的">
+  <meta itemprop="description" content="Pytorch是如何工作的">
   <meta itemprop="datePublished" content="2026-06-14T00:00:00+00:00">
   <meta itemprop="dateModified" content="2026-06-14T00:00:00+00:00">
+  <meta itemprop="wordCount" content="105">
   <meta itemprop="image" content="https://hugo-narrow.vercel.app/images/og-default.avif">
+  <meta itemprop="keywords" content="Neural Network,AI,Pytorch">
 
 
-
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    title="Hugo Narrow"
-    href="https://hugo-narrow.vercel.app/tags/index.xml" />
 
 
 
@@ -200,6 +202,11 @@
 
 
 
+            <script
+              src="/js/toc.755ab21964084d868b65e45cc6beb65be7a0326aef3a6398ef6074fbf745e97e.js"
+              integrity="sha256-dVqyGWQITYaLZeRcxr62W&#43;egMmrvOmOY72B0&#43;/dF6X4="
+              crossorigin="anonymous"
+              defer></script>
 
 
 
@@ -357,7 +364,7 @@
           
           <a href="/tags/"
             class="nav-link 
-                nav-active-indicator bg-accent text-accent-foreground
+                text-muted-foreground hover:text-primary hover:bg-primary/10
                focus:ring-primary/20 relative flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none">
             
             <svg class="h-5 w-5" aria-label="Tags" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -546,10 +553,10 @@
         <a
           href="/tags/"
           class="nav-link 
-            nav-active-indicator bg-accent text-accent-foreground
+            text-muted-foreground hover:text-primary hover:bg-primary/10
            focus:ring-primary/20 relative flex items-center gap-3 rounded-md px-4 py-3 text-sm font-medium transition-all duration-200 ease-out hover:translate-x-1 focus:ring-2 focus:outline-none"
           role="menuitem"
-          aria-current="page">
+          >
           
             <svg class="h-5 w-5" aria-label="Tags" fill="none" stroke="currentColor" viewBox="0 0 24 24">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
@@ -679,6 +686,25 @@
         </li>
       
     
+      
+        
+        <li class="flex items-center gap-1 md:gap-2 min-w-0">
+          <span class="text-muted-foreground/50 shrink-0"
+            ><svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+</svg>
+          </span>
+          <a
+            href="/posts/"
+            class="text-muted-foreground hover:text-primary hover:bg-primary/10 flex items-center gap-1 rounded-lg px-1 md:px-3 py-0.5 md:py-1.5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.02] shrink-0">
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+</svg>
+            <span class="max-w-16 md:max-w-none truncate">Posts</span>
+          </a>
+        </li>
+      
+    
 
     
     <li class="flex items-center gap-1 md:gap-2 min-w-0">
@@ -691,7 +717,7 @@
         <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
 </svg>
-        <span class="max-w-32 md:max-w-[16rem] lg:max-w-none truncate">Tags</span>
+        <span class="max-w-32 md:max-w-[16rem] lg:max-w-none truncate">Pytorch是如何工作的</span>
       </span>
     </li>
 
@@ -700,288 +726,359 @@
 
 
       
+
+  
+
+
   
   <header class="mb-8">
-    <h1 class="text-foreground mb-4 text-3xl font-bold">
-      
-        Tags
-      
-    </h1>
+    
+
+
+
+
+<div class="post-meta mb-8">
+  
+  <h1 class="text-foreground mb-6 text-3xl leading-tight font-bold md:text-4xl">
+    Pytorch是如何工作的
+  </h1>
+
+  
+  
+  <div class="text-muted-foreground mb-6 text-lg leading-relaxed">
+    Pytorch是如何工作的
+  </div>
+  
+
+  
+  <div class="bg-card border-border rounded-xl border">
 
     
-      <p class="text-muted-foreground mb-6">
         
-          Browse all tags to discover interesting content.
-        
-      </p>
-    
+        <div class="p-6">
 
-
-    
-    <div class="text-muted-foreground flex items-center gap-4 text-sm">
-      <div class="flex items-center gap-1">
-        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-		<path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
-		<circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
-	</g>
+          
+          <div class="text-muted-foreground flex flex-wrap items-center gap-3 text-sm mb-4">
+            
+            <div class="flex items-center gap-2">
+              <svg class="h-4 w-4" aria-label="Published on" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
 </svg>
-        <span>
+
+              <time datetime="2026-06-14">
+                June 14, 2026
+              </time>
+            </div>
+
+            
+            
+
+            
+            
+            <div class="flex items-center gap-2">
+              <svg class="h-4 w-4" aria-label="Reading time" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+
+              <span>1 minute</span>
+            </div>
+            
+
+            
+            
+            <div class="flex items-center gap-2">
+              <svg class="h-4 w-4" aria-label="Word count" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+</svg>
+
+              <span>105 words</span>
+            </div>
+            
+          </div>
+
           
-            9 tags total
+          <div class="space-y-3 pt-4 border-t border-border">
+            <div class="flex items-center gap-2">
+              <div class="flex-shrink-0">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+</svg>
+
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="text-muted-foreground text-sm font-medium">
+                    Categories:
+                  </span>
+                  <a href="/categories/neural-network/"
+                    class="inline-flex items-center rounded-full px-2.5 py-1 text-sm font-medium transition-all duration-200 bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground">
+                    Neural Network
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex-shrink-0">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+</svg>
+
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-center gap-1.5">
+                  <span class="text-muted-foreground text-sm font-medium">
+                    Tags:
+                  </span>
+                  <a href="/tags/neural-network/"
+                    class="inline-flex items-center rounded-full px-2.5 py-1 text-sm font-medium transition-all duration-200 bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground">
+                    Neural Network
+                  </a>
+                  <a href="/tags/ai/"
+                    class="inline-flex items-center rounded-full px-2.5 py-1 text-sm font-medium transition-all duration-200 bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground">
+                    AI
+                  </a>
+                  <a href="/tags/pytorch/"
+                    class="inline-flex items-center rounded-full px-2.5 py-1 text-sm font-medium transition-all duration-200 bg-muted/50 text-muted-foreground hover:bg-muted hover:text-foreground">
+                    Pytorch
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           
-        </span>
-      </div>
+          
+          <div class="flex items-center gap-2 pt-4 border-t border-border mt-4">
+            <svg class="h-4 w-4" aria-label="Author" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+</svg>
+
+            <span class="text-muted-foreground text-sm">
+              Author:
+            </span>
+            <span class="text-foreground text-sm font-medium">
+              Zhy-Liu
+            </span>
+          </div>
+          
     </div>
+  </div>
+</div>
+
   </header>
 
   
+  <article class="prose prose-neutral dark:prose-invert mb-12 max-w-none">
+    <h2 id="基本概念">基本概念</h2>
+<h3 id="tensor-storage-strides">Tensor, Storage, Strides</h3>
+<p>Tensor是一个n维的数据结构，其中包括了具体的数据（每一个索引对应的标量）和描述这个Tensor的元数据；
+Storage是物理上存储Tensor的数据，</p>
+<p>Stride是Tensor重要的元数据。</p>
+
+  </article>
+
   
   
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <div class="post-license bg-muted/30 border-border mb-8 rounded-xl border p-6">
+    <div class="flex items-start gap-4">
+      
+      <div
+        class="bg-primary/10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg">
+        <svg class="h-6 w-6" aria-label="许可证" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+</svg>
+      </div>
+
+      
+      <div class="flex-1 min-w-0">
+        <h3 class="text-foreground mb-2 text-lg font-semibold">
+          Copyright Notice
+        </h3>
+
+        <div class="text-muted-foreground space-y-2 text-sm">
+          
+          
+          <p>
+            <strong>Author:</strong>
+            Hugo Narrow
+          </p>
+          
+
+          
+          <p>
+            <strong>Link:</strong>
+            <a
+              href="https://hugo-narrow.vercel.app/posts/pytorch%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/"
+              class="text-primary hover:text-primary/80 transition-colors break-all hyphens-auto duration-200">
+              https://hugo-narrow.vercel.app/posts/pytorch%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84/
+            </a>
+          </p>
+
+          
+          <p>
+            <strong>License:</strong>
+            
+              <a
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:text-primary/80 transition-colors duration-200">
+                CC BY-NC-SA 4.0
+              </a>
+            
+          </p>
+
+          
+          
+          <p class="text-xs">
+            This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Please attribute the source, use non-commercially, and maintain the same license.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  
+
+
+
+
+
+  <nav
+    class="post-navigation mb-12"
+    aria-label="Post navigation">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+      
+      <div class="nav-item">
+        
+          <a
+            href="/posts/%E5%BD%93%E7%AE%97%E6%B3%95%E9%81%AE%E4%BD%8F%E4%BA%86%E4%BA%BA%E7%9A%84%E5%BF%83/"
+            class="group bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex min-h-[140px] flex-col justify-between rounded-xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none">
+            <div>
+              <div class="mb-3 flex items-center gap-3">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+</svg>
+                <span class="text-muted-foreground text-sm font-medium">
+                  Previous
+                </span>
+              </div>
+
+              <h3
+                class="text-foreground group-hover:text-primary mb-3 line-clamp-2 text-lg leading-tight font-semibold transition-colors duration-200">
+                当算法遮住了人的心
+              </h3>
+            </div>
+
+            <div
+              class="text-muted-foreground mt-auto flex items-center gap-2 text-xs">
+              <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+</svg>
+
+              <time datetime="2026-06-14">
+                Jun 14
+              </time>
+            </div>
+          </a>
+        
+      </div>
+
+      
+      <div class="nav-item">
+        
+          <div
+            class="bg-muted/30 border-border/50 flex min-h-[140px] flex-col justify-center rounded-xl border p-6">
+            <div class="mb-3 flex items-center justify-end gap-3">
+              <span class="text-muted-foreground/50 text-sm font-medium">
+                No next post
+              </span>
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+</svg>
+            </div>
+            <p class="text-muted-foreground/50 text-right text-sm">
+              This is the latest post
+            </p>
+          </div>
+        
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  <section class="related-posts mb-12">
     
+    <div class="mb-6 flex items-center gap-3">
+      <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+</svg>
+      <h2 class="text-foreground text-2xl font-bold">
+        Related Posts
+      </h2>
+    </div>
+
     
-    <div class="flex flex-wrap gap-3">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
       
+        <article class="group">
+          <a href="/posts/%E9%87%8D%E6%B8%A9%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF1-%E5%BD%92%E4%B8%80%E5%8C%96normalization%E6%8A%80%E6%9C%AF/" class="block">
+            <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex items-center rounded-xl border p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none min-h-[120px]">
+              <h3 class="text-foreground group-hover:text-primary text-lg font-semibold leading-snug line-clamp-3 w-full">
+                重温神经网络技术1 —— 归一化（Normalization）技术
+              </h3>
+            </div>
+          </a>
+        </article>
       
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-
-      
-        
-        
-        
-        
-
-        
-          
-        
-
-
-        <a
-          href="/tags/ai/"
-          class="bg-card border-border group text-2xl hover:bg-primary/10 hover:text-primary hover:border-primary/50 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg border px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-          data-taxonomy="tag">
-          <span
-            class="text-foreground group-hover:text-primary font-medium transition-colors duration-200">
-            AI
-          </span>
-          <span
-            class="bg-primary/10 text-primary rounded-full px-2 py-0.5 text-xs font-medium">
-            3
-          </span>
-        </a>
-      
-        
-        
-        
-        
-
-        
-          
-        
-
-
-        <a
-          href="/tags/neural-network/"
-          class="bg-card border-border group text-2xl hover:bg-primary/10 hover:text-primary hover:border-primary/50 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg border px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-          data-taxonomy="tag">
-          <span
-            class="text-foreground group-hover:text-primary font-medium transition-colors duration-200">
-            Neural Network
-          </span>
-          <span
-            class="bg-primary/10 text-primary rounded-full px-2 py-0.5 text-xs font-medium">
-            3
-          </span>
-        </a>
-      
-        
-        
-        
-        
-
-        
-          
-        
-
-
-        <a
-          href="/tags/life/"
-          class="bg-card border-border group text-lg hover:bg-primary/10 hover:text-primary hover:border-primary/50 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg border px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-          data-taxonomy="tag">
-          <span
-            class="text-foreground group-hover:text-primary font-medium transition-colors duration-200">
-            Life
-          </span>
-          <span
-            class="bg-primary/10 text-primary rounded-full px-2 py-0.5 text-xs font-medium">
-            2
-          </span>
-        </a>
-      
-        
-        
-        
-        
-
-        
-          
-        
-
-
-        <a
-          href="/tags/pytorch/"
-          class="bg-card border-border group text-base hover:bg-primary/10 hover:text-primary hover:border-primary/50 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg border px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-          data-taxonomy="tag">
-          <span
-            class="text-foreground group-hover:text-primary font-medium transition-colors duration-200">
-            Pytorch
-          </span>
-          <span
-            class="bg-primary/10 text-primary rounded-full px-2 py-0.5 text-xs font-medium">
-            1
-          </span>
-        </a>
-      
-        
-        
-        
-        
-
-        
-          
-        
-
-
-        <a
-          href="/tags/%E5%8E%86%E5%8F%B2/"
-          class="bg-card border-border group text-base hover:bg-primary/10 hover:text-primary hover:border-primary/50 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg border px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-          data-taxonomy="tag">
-          <span
-            class="text-foreground group-hover:text-primary font-medium transition-colors duration-200">
-            历史
-          </span>
-          <span
-            class="bg-primary/10 text-primary rounded-full px-2 py-0.5 text-xs font-medium">
-            1
-          </span>
-        </a>
-      
-        
-        
-        
-        
-
-        
-          
-        
-
-
-        <a
-          href="/tags/%E5%AD%A6%E4%B9%A0/"
-          class="bg-card border-border group text-base hover:bg-primary/10 hover:text-primary hover:border-primary/50 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg border px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-          data-taxonomy="tag">
-          <span
-            class="text-foreground group-hover:text-primary font-medium transition-colors duration-200">
-            学习
-          </span>
-          <span
-            class="bg-primary/10 text-primary rounded-full px-2 py-0.5 text-xs font-medium">
-            1
-          </span>
-        </a>
-      
-        
-        
-        
-        
-
-        
-          
-        
-
-
-        <a
-          href="/tags/%E5%BE%AE%E5%9E%8B%E7%A0%94%E7%A9%B6/"
-          class="bg-card border-border group text-base hover:bg-primary/10 hover:text-primary hover:border-primary/50 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg border px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-          data-taxonomy="tag">
-          <span
-            class="text-foreground group-hover:text-primary font-medium transition-colors duration-200">
-            微型研究
-          </span>
-          <span
-            class="bg-primary/10 text-primary rounded-full px-2 py-0.5 text-xs font-medium">
-            1
-          </span>
-        </a>
-      
-        
-        
-        
-        
-
-        
-          
-        
-
-
-        <a
-          href="/tags/%E6%B8%B8%E6%88%8F/"
-          class="bg-card border-border group text-base hover:bg-primary/10 hover:text-primary hover:border-primary/50 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg border px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-          data-taxonomy="tag">
-          <span
-            class="text-foreground group-hover:text-primary font-medium transition-colors duration-200">
-            游戏
-          </span>
-          <span
-            class="bg-primary/10 text-primary rounded-full px-2 py-0.5 text-xs font-medium">
-            1
-          </span>
-        </a>
-      
-        
-        
-        
-        
-
-        
-          
-        
-
-
-        <a
-          href="/tags/%E7%9B%AE%E6%A0%87%E7%AE%A1%E7%90%86/"
-          class="bg-card border-border group text-base hover:bg-primary/10 hover:text-primary hover:border-primary/50 focus:ring-primary/20 inline-flex items-center gap-2 rounded-lg border px-3 py-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:scale-105 focus:ring-2 focus:outline-none"
-          data-taxonomy="tag">
-          <span
-            class="text-foreground group-hover:text-primary font-medium transition-colors duration-200">
-            目标管理
-          </span>
-          <span
-            class="bg-primary/10 text-primary rounded-full px-2 py-0.5 text-xs font-medium">
-            1
-          </span>
-        </a>
+        <article class="group">
+          <a href="/posts/%E9%87%8D%E6%B8%A9%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF1-%E7%BB%9F%E8%AE%A1%E9%87%8F%E4%B8%8E%E8%B6%85%E5%8F%82%E6%95%B0/" class="block">
+            <div class="bg-card border-border hover:bg-primary/5 hover:border-primary/20 focus:ring-primary/20 flex items-center rounded-xl border p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg focus:ring-2 focus:outline-none min-h-[120px]">
+              <h3 class="text-foreground group-hover:text-primary text-lg font-semibold leading-snug line-clamp-3 w-full">
+                重温神经网络技术1 —— 统计量与超参数
+              </h3>
+            </div>
+          </a>
+        </article>
       
     </div>
+  </section>
+
+
+
+
+  
   
 
 
@@ -1233,7 +1330,41 @@
 
 
 
-    
+    <aside id="toc-container" class="toc-center" data-position="center">
+      <div id="toc-center" class="pointer-events-none fixed left-0 right-0 top-28 z-40 mx-auto w-full max-w-4xl px-4 transition-all duration-300">
+        <div class="pointer-events-auto relative mx-auto w-fit">
+          <button id="toc-center-toggle" class="bg-card/80 border-border text-muted-foreground hover:text-primary hover:bg-primary/10 flex items-center gap-2 rounded-full border px-4 py-1.5 text-sm backdrop-blur-sm transition-colors cursor-pointer shadow-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="8" x2="21" y1="6" y2="6"/>
+  <line x1="8" x2="21" y1="12" y2="12"/>
+  <line x1="8" x2="21" y1="18" y2="18"/>
+  <line x1="3" x2="3.01" y1="6" y2="6"/>
+  <line x1="3" x2="3.01" y1="12" y2="12"/>
+  <line x1="3" x2="3.01" y1="18" y2="18"/>
+</svg>
+
+            <span id="toc-center-title" class="truncate max-w-[200px]">Table of Contents</span>
+            <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+</svg>
+          </button>
+          
+          
+          <div id="toc-center-dropdown" class="bg-card border-border absolute left-1/2 top-full mt-2 hidden max-h-[60vh] w-[280px] -translate-x-1/2 overflow-y-auto rounded-xl border p-4 shadow-lg transition-all opacity-0 origin-top scale-95 scrollbar-hide">
+            <div id="toc-center-content" class="text-sm [&_nav>ul]:pl-0 [&_ul]:list-none [&_ul]:pl-4 [&_li]:my-1.5 [&_a]:block [&_a]:rounded-md [&_a]:px-2 [&_a]:py-1 [&_a]:text-muted-foreground [&_a]:transition-colors [&_a:hover]:bg-primary/10 [&_a:hover]:text-primary [&_a.active]:bg-primary/10 [&_a.active]:text-primary [&_a.active]:font-medium [&_a]:truncate">
+              <nav id="TableOfContents">
+  <ul>
+    <li><a href="#基本概念">基本概念</a>
+      <ul>
+        <li><a href="#tensor-storage-strides">Tensor, Storage, Strides</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </div></aside>
     
 <div
   id="search-overlay"
