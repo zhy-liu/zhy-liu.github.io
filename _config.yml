@@ -41,6 +41,9 @@ kramdown:
 highlighter: rouge
 
 collections:
+  blog:
+    output: true
+    permalink: /blog/:path/
   publications:
     output: true
     permalink: /publication/:path/
@@ -52,6 +55,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: false
   - scope:
       path: ""
       type: publications
