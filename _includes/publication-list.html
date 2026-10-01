@@ -1,0 +1,12 @@
+{% assign papers = site.publications | sort: "date" | reverse %}
+{% assign heading_level = include.heading_level | default: 2 %}
+<div class="publication-list">
+  {% for paper in papers %}
+  <article class="publication-card" itemscope itemtype="http://schema.org/ScholarlyArticle">
+    <p class="publication-card__venue">{{ paper.venue | escape }}</p>
+    <h{{ heading_level }} class="publication-card__title" itemprop="headline"><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h{{ heading_level }}>
+    <p class="publication-card__authors">{{ paper.authors | escape }}</p>
+    <p class="publication-card__links"><a href="{{ paper.paperurl | escape }}">[paper]</a> <a href="{{ paper.scholarurl | escape }}">[Google Scholar]</a></p>
+  </article>
+  {% endfor %}
+</div>

@@ -7,12 +7,4 @@ author_profile: true
 
 <p>Full and current list on <a href="{{ site.author.googlescholar | escape }}">Google Scholar</a>.</p>
 
-{% assign papers = site.publications | sort: "date" | reverse %}
-{% for paper in papers %}
-<article class="archive__item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <h2 class="archive__item-title" itemprop="headline"><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h2>
-  <p>{{ paper.authors }}</p>
-  <p><em>{{ paper.venue }}</em></p>
-  <p><a href="{{ paper.paperurl | escape }}">Paper</a> · <a href="{{ paper.scholarurl | escape }}">Google Scholar entry</a></p>
-</article>
-{% endfor %}
+{% include publication-list.html %}
