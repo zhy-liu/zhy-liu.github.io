@@ -1,6 +1,8 @@
 ---
 title: "Remote Sensing Scene Data Generation Using Element Geometric Transformation and GAN-Based Texture Synthesis"
 date: 2022-04-14
+display_order: 4
+image: "/images/publications/remote-sensing.svg"
 year: 2022
 venue: "Applied Sciences, 12(8), 3972"
 venue_short: "Applied Sciences 2022"

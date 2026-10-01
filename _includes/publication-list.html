@@ -1,12 +1,17 @@
-{% assign papers = site.publications | sort: "date" | reverse %}
+{% assign papers = site.publications | sort: "display_order" %}
 {% assign heading_level = include.heading_level | default: 2 %}
 <div class="publication-list">
   {% for paper in papers %}
   <article class="publication-card" itemscope itemtype="http://schema.org/ScholarlyArticle">
-    <p class="publication-card__venue">{{ paper.venue_short | default: paper.venue | escape }}</p>
-    <h{{ heading_level }} class="publication-card__title" itemprop="headline"><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h{{ heading_level }}>
-    <p class="publication-card__authors">{{ paper.authors | escape }}</p>
-    <p class="publication-card__links"><a href="{{ paper.paperurl | escape }}">[paper]</a> <a href="{{ paper.scholarurl | escape }}">[Google Scholar]</a></p>
+    <a class="publication-card__visual" href="{{ paper.url | relative_url }}" aria-label="View details for {{ paper.title | escape }}">
+      <img src="{{ paper.image | relative_url }}" alt="Placeholder illustration for {{ paper.title | escape }}" width="640" height="400" {% if forloop.first %}loading="eager"{% else %}loading="lazy"{% endif %} itemprop="image">
+      <span class="publication-card__venue">{{ paper.venue_short | default: paper.venue | escape }}</span>
+    </a>
+    <div class="publication-card__body">
+      <h{{ heading_level }} class="publication-card__title" itemprop="headline"><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h{{ heading_level }}>
+      <p class="publication-card__authors">{{ paper.authors | escape }}</p>
+      <p class="publication-card__links"><a href="{{ paper.paperurl | escape }}">[paper]</a> <a href="{{ paper.scholarurl | escape }}">[Google Scholar]</a></p>
+    </div>
   </article>
   {% endfor %}
 </div>

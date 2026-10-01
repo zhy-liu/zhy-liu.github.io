@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Remote sensing placeholder</title>
+  <desc id="desc">Abstract aerial map tiles. Replace with a figure from the paper.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#365044"/><stop offset="1" stop-color="#8aa06d"/></linearGradient></defs>
+  <path fill="url(#bg)" d="M0 0h640v400H0z"/>
+  <g transform="rotate(-12 320 170)" stroke="#f2f1dc" stroke-opacity=".55" stroke-width="6"><path fill="#79ad85" d="M95 54h145v105H95z"/><path fill="#b5ae78" d="M249 54h145v105H249z"/><path fill="#5d947e" d="M403 54h145v105H403z"/><path fill="#a9bb82" d="M95 168h145v105H95z"/><path fill="#658964" d="M249 168h145v105H249z"/><path fill="#c2b47d" d="M403 168h145v105H403z"/></g>
+  <path d="M144 87c58 42 82 89 118 135s90 42 135 7 77-72 130-58" fill="none" stroke="#e3f5ec" stroke-width="8" stroke-dasharray="16 13"/>
+  <text x="36" y="351" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="2">REMOTE SENSING</text>
+  <text x="37" y="379" fill="#edf5e3" font-family="Arial,sans-serif" font-size="15" letter-spacing="2">IMAGE PLACEHOLDER</text>
+</svg>

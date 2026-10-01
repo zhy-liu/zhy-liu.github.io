@@ -1,6 +1,8 @@
 ---
 title: "Sample from What You See: Visuomotor Policy Learning via Diffusion Bridge with Observation-Embedded Stochastic Differential Equation"
 date: 2025-12-08
+display_order: 1
+image: "/images/publications/bridge-policy.svg"
 year: 2026
 venue: "ICML 2026"
 authors: "Zhaoyang Liu, Mokai Pan, Zhongyi Wang, Kaizhen Zhu, Haotao Lu, Haipeng Zhang, Jingya Wang, Ye Shi"

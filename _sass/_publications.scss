@@ -1,14 +1,38 @@
 .publication-card {
+  display: grid;
+  grid-template-columns: minmax(0, 38%) minmax(0, 1fr);
+  gap: 1.15rem;
+  align-items: center;
   padding: 1.1rem 0 1.25rem;
   border-bottom: 1px solid var(--global-border-color);
 }
 
+.publication-card__visual {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--global-border-color);
+  border-radius: 4px;
+}
+
+.publication-card__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+}
+
 .publication-list .publication-card__venue {
-  margin: 0 0 0.4rem;
-  color: var(--global-text-color-light);
-  font-size: 0.82em;
+  position: absolute;
+  top: 0.55rem;
+  left: 0;
+  padding: 0.25rem 0.55rem;
+  color: #fff;
+  background: #214f7c;
+  font-size: 0.72em;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  line-height: 1.2;
 }
 
 .publication-list .publication-card__title {
@@ -24,4 +48,15 @@
 .publication-list .publication-card__links {
   margin: 0;
   font-size: 0.9em;
+}
+
+@media (max-width: 700px) {
+  .publication-card {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .publication-card__visual {
+    max-width: 420px;
+  }
 }
