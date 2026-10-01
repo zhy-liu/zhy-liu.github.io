@@ -11,6 +11,6 @@ paperurl: "https://ojs.aaai.org/index.php/ICWSM/article/view/35930"
 scholarurl: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Fdtto0wAAAAJ&citation_for_view=Fdtto0wAAAAJ:d1gkVwhDpl0C"
 ---
 
-**Authors:** {{ page.authors }}
+**Authors:** {{ page.authors | escape | replace: "Zhaoyang Liu", "<strong>Zhaoyang Liu</strong>" }}
 
 [Paper]({{ page.paperurl }}) · [Google Scholar entry]({{ page.scholarurl }})
