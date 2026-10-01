@@ -4,7 +4,7 @@ permalink: /
 author_profile: true
 ---
 
-## About Me
+# About Me
 
 Hi, I am currently a PhD student at ShanghaiTech University under the supervision of [Prof. Ye Shi](https://shiye21.github.io/), who is an expert in the field of nonconvex optimization, machine learning and embodied AI. My research interest includes reinforcement learning, diffusion models and AI4Science. I am currently seeking an industry internship aligned with my research interests. Please feel free to [contact me](mailto:liuzhy2023@shanghaitech.edu.cn).
 
