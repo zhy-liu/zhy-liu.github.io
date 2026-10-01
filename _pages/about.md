@@ -1,13 +1,8 @@
 ---
 layout: single
 permalink: /
-title: "刘昭阳 Zhaoyang Liu"
 author_profile: true
 ---
-
-PhD Student, ShanghaiTech University
-
-[liuzhy2023@shanghaitech.edu.cn](mailto:liuzhy2023@shanghaitech.edu.cn)
 
 Hi, I am currently a PhD student at ShanghaiTech University under the supervision of [Prof. Ye Shi](https://shiye21.github.io/), who is an expert in the field of nonconvex optimization, machine learning and embodied AI. My research interest includes reinforcement learning, diffusion models and AI4Science.
 
@@ -32,4 +27,10 @@ Hi, I am currently a PhD student at ShanghaiTech University under the supervisio
 ## 💬 Invited Talks
 
 - *2026.07.11*, Sample from What You See: Visuomotor Policy Learning via Diffusion Bridge with Observation-Embedded Stochastic Differential Equation, ICML poster.
-- *2025.12.25*, XSuperZone × NVIDIA “工赋上海”创新大会.
+- *2026.04.30*, Introduction to World Model, Computer Vision II **[CS272]**.
+- *2025.12.25*, Applications of generative models in Embodied AI, XSuperZone × NVIDIA “工赋上海”创新大会.
+
+## 🎻 Hobbies
+
+- *2019.01 - 2022.06*, Cellist at Chinese Folk Orchestra, China University of Geosciences (Wuhan).
+- *2023.09 - Now*, Cellist at ShanghaiTech Orchestra.
