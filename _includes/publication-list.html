@@ -4,8 +4,8 @@
   {% for paper in papers %}
   <article class="publication-card" itemscope itemtype="http://schema.org/ScholarlyArticle">
     <a class="publication-card__visual" href="{{ paper.url | relative_url }}" aria-label="View details for {{ paper.title | escape }}">
-      <img src="{{ paper.image | relative_url }}" alt="Placeholder illustration for {{ paper.title | escape }}" width="640" height="400" {% if forloop.first %}loading="eager"{% else %}loading="lazy"{% endif %} itemprop="image">
       <span class="publication-card__venue">{{ paper.venue_short | default: paper.venue | escape }}</span>
+      <img src="{{ paper.image | relative_url }}" alt="Paper illustration for {{ paper.title | escape }}" width="640" height="400" {% if forloop.first %}loading="eager"{% else %}loading="lazy"{% endif %} itemprop="image">
     </a>
     <div class="publication-card__body">
       <h{{ heading_level }} class="publication-card__title" itemprop="headline"><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h{{ heading_level }}>

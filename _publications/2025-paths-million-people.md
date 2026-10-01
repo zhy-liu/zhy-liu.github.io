@@ -2,7 +2,7 @@
 title: "Paths of a Million People: Extracting Life Trajectories from Wikipedia"
 date: 2025-06-07
 display_order: 3
-image: "/images/publications/million-paths.svg"
+image: "/images/publications/path.png"
 year: 2025
 venue: "Proceedings of the International AAAI Conference on Web and Social Media, 19, 2226–2240"
 venue_short: "ICWSM 2025"

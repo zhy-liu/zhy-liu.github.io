@@ -9,10 +9,12 @@
 
 .publication-card__visual {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border: 1px solid var(--global-border-color);
   border-radius: 4px;
+  background: #fff;
 }
 
 .publication-card__visual img {
@@ -20,13 +22,11 @@
   width: 100%;
   height: auto;
   aspect-ratio: 8 / 5;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .publication-list .publication-card__venue {
-  position: absolute;
-  top: 0.55rem;
-  left: 0;
+  align-self: flex-start;
   padding: 0.25rem 0.55rem;
   color: #fff;
   background: #214f7c;
