@@ -16,7 +16,7 @@ Hi, I am currently a PhD student at ShanghaiTech University under the supervisio
 
 {% assign articles = site.blog | sort: "title" %}
 {% for post in articles %}
-  {% include archive-single.html %}
+- [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
 ## 📖 Education
