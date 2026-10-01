@@ -3,7 +3,7 @@
   border-bottom: 1px solid var(--global-border-color);
 }
 
-.publication-card__venue {
+.publication-list .publication-card__venue {
   margin: 0 0 0.4rem;
   color: var(--global-text-color-light);
   font-size: 0.82em;
@@ -11,17 +11,17 @@
   letter-spacing: 0.03em;
 }
 
-.publication-card__title {
+.publication-list .publication-card__title {
   margin: 0 0 0.5rem;
   font-size: 1.15em;
   line-height: 1.35;
 }
 
-.publication-card__authors {
+.publication-list .publication-card__authors {
   margin: 0 0 0.45rem;
 }
 
-.publication-card__links {
+.publication-list .publication-card__links {
   margin: 0;
   font-size: 0.9em;
 }
