@@ -10,7 +10,7 @@
     <div class="publication-card__body">
       <h{{ heading_level }} class="publication-card__title" itemprop="headline"><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h{{ heading_level }}>
       <p class="publication-card__authors">{{ paper.authors | escape | replace: "Zhaoyang Liu", "<strong>Zhaoyang Liu</strong>" }}</p>
-      <p class="publication-card__links"><a href="{{ paper.paperurl | escape }}">[paper]</a> <a href="{{ paper.scholarurl | escape }}">[Google Scholar]</a></p>
+      <p class="publication-card__links"><a href="{{ paper.paperurl | escape }}">[paper]</a>{% if paper.projecturl %} <a href="{{ paper.projecturl | escape }}">[project]</a>{% endif %}{% if paper.codeurl %} <a href="{{ paper.codeurl | escape }}">[code]</a>{% endif %}</p>
     </div>
   </article>
   {% endfor %}

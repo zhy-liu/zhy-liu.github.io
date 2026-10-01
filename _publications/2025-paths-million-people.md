@@ -8,9 +8,9 @@ venue: "Proceedings of the International AAAI Conference on Web and Social Media
 venue_short: "ICWSM 2025"
 authors: "Ying Zhang, Xiaofeng Li, Zhaoyang Liu, Haipeng Zhang"
 paperurl: "https://ojs.aaai.org/index.php/ICWSM/article/view/35930"
-scholarurl: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Fdtto0wAAAAJ&citation_for_view=Fdtto0wAAAAJ:d1gkVwhDpl0C"
+codeurl: "https://github.com/ZhangDataLab/COSMOS"
 ---
 
 **Authors:** {{ page.authors | escape | replace: "Zhaoyang Liu", "<strong>Zhaoyang Liu</strong>" }}
 
-[Paper]({{ page.paperurl }}) · [Google Scholar entry]({{ page.scholarurl }})
+[Paper]({{ page.paperurl }}) · [Code]({{ page.codeurl }})

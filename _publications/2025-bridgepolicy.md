@@ -7,9 +7,10 @@ year: 2026
 venue: "ICML 2026"
 authors: "Zhaoyang Liu, Mokai Pan, Zhongyi Wang, Kaizhen Zhu, Haotao Lu, Haipeng Zhang, Jingya Wang, Ye Shi"
 paperurl: "https://arxiv.org/abs/2512.07212"
-scholarurl: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Fdtto0wAAAAJ&citation_for_view=Fdtto0wAAAAJ:UeHWp8X0CEIC"
+projecturl: "https://jianghcsr.github.io/BridgePolicy_page/"
+codeurl: "https://github.com/jianghcsr/BridgePolicy"
 ---
 
 **Authors:** {{ page.authors | escape | replace: "Zhaoyang Liu", "<strong>Zhaoyang Liu</strong>" }}
 
-[Paper]({{ page.paperurl }}) · [Google Scholar entry]({{ page.scholarurl }})
+[Paper]({{ page.paperurl }}) · [Project]({{ page.projecturl }}) · [Code]({{ page.codeurl }})
