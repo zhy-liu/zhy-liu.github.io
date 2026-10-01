@@ -12,6 +12,13 @@ Hi, I am currently a PhD student at ShanghaiTech University under the supervisio
 
 {% include publication-list.html heading_level=3 %}
 
+## ✍️ Blog
+
+{% assign articles = site.blog | sort: "title" %}
+{% for post in articles %}
+  {% include archive-single.html %}
+{% endfor %}
+
 ## 📖 Education
 
 - *2023.09 - present*, ShanghaiTech University, Shanghai.
