@@ -30,7 +30,7 @@ Hi, I am currently a PhD student at ShanghaiTech University under the supervisio
 
 ## 🕴️ Services
 
-- Reviewer: ICLR 2027, ICWSM 2025, AAAI 2025.
+- Reviewer: ICLR 2027, ICWSM 2025, AAAI 2025, CIKM 2024.
 - Teaching Assistant: Introduction to Data Science and Fintech **[CS277]** (2024 Fall) at ShanghaiTech University.
 
 ## 💬 Invited Talks
