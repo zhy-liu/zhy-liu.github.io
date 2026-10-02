@@ -6,7 +6,7 @@ author_profile: true
 
 # About Me
 
-Hi, I am currently a PhD student at ShanghaiTech University under the supervision of [Prof. Ye Shi](https://shiye21.github.io/), who is an expert in the field of nonconvex optimization, machine learning and embodied AI. My research interest includes reinforcement learning, diffusion models and AI4Science. I am currently seeking an industry internship aligned with my research interests. Please feel free to [contact me](mailto:liuzhy2023@shanghaitech.edu.cn).
+Hi, I am currently a PhD student at ShanghaiTech University under the supervision of <a href="https://shiye21.github.io/" target="_blank" rel="noopener noreferrer">Prof. Ye Shi</a>, who is an expert in the field of nonconvex optimization, machine learning and embodied AI. My research interest includes reinforcement learning, diffusion models and AI4Science. I am currently seeking an industry internship aligned with my research interests. Please feel free to [contact me](mailto:liuzhy2023@shanghaitech.edu.cn).
 
 ## 📝 Publications
 
@@ -39,7 +39,7 @@ Hi, I am currently a PhD student at ShanghaiTech University under the supervisio
 - *2026.04.30*, Introduction to World Model, Computer Vision II **[CS272]**.
 - *2025.12.25*, Applications of generative models in Embodied AI, XSuperZone × NVIDIA “工赋上海”创新大会.
 
-## 🎻 Hobbies
+## 🎻 Specialties
 
 - *2019.01 - 2022.06*, Cellist at Chinese Folk Orchestra, China University of Geosciences (Wuhan).
 - *2023.09 - Now*, Cellist at ShanghaiTech Orchestra.
