@@ -6,7 +6,7 @@ author_profile: true
 
 # About Me
 
-Hi, I am currently a PhD student at ShanghaiTech University under the supervision of <a href="https://shiye21.github.io/" target="_blank" rel="noopener noreferrer">Prof. Ye Shi</a>, who is an expert in the field of nonconvex optimization, machine learning and embodied AI. My research interest includes reinforcement learning, diffusion models and AI4Science. I am currently seeking an industry internship aligned with my research interests. Please feel free to [contact me](mailto:liuzhy2023@shanghaitech.edu.cn).
+Hi, I am currently a PhD student at ShanghaiTech University under the supervision of <a href="https://shiye21.github.io/" target="_blank" rel="noopener noreferrer">Prof. Ye Shi</a>, who is an expert in the field of nonconvex optimization, machine learning and embodied AI. My research interest includes reinforcement learning, diffusion models, embodied intelligence and AI4Science. In my life, I love classical music and play the cello and piano during my rest time. My favorite composers are Johannes Brahms and Dmitry Dmitriyevich Shostakovich. I recommend their music to all of my visitors. I am currently seeking an industry internship aligned with my research interests. Please feel free to [contact me](mailto:liuzhy2023@shanghaitech.edu.cn).
 
 ## 📝 Publications
 
