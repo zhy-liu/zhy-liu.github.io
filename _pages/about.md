@@ -26,7 +26,7 @@ Hi, I am currently a PhD student at ShanghaiTech University under the supervisio
 
 ## 💻 Work Experience / Internships
 
-- *2022.08 - 2023.08*, Software Engineer, Huawei, Shenzhen.
+- *2022.08 - 2023.08*, Software Engineer, Huawei Technologies Co., Ltd., Shenzhen.
 
 ## 🕴️ Services
 
