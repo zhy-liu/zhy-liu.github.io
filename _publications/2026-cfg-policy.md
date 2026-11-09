@@ -6,7 +6,7 @@ image: "/images/publications/cfg-policy.png"
 year: 2026
 venue: "arXiv preprint, 2026"
 venue_short: "arXiv 2026"
-authors: "Shutong Ding, Zhaoyang Liu, Yimiao Zhou, Jingya Wang, Jiayuan Gu, Ye Shi"
+authors: "Shutong Ding#, Zhaoyang Liu#, Yimiao Zhou, Jingya Wang, Jiayuan Gu, Ye Shi"
 paperurl: "https://arxiv.org/abs/2610.14936"
 projecturl: "https://zhy-liu.github.io/cfg-policy-page/"
 ---
